@@ -1,6 +1,30 @@
-import 'package:flutter/material.dart';
+import 'dart:async';
 
-class SplashScreen extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+class SplashScreen extends StatefulWidget {
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  bool isLogged = false;
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 2), () {
+      _navigate();
+    });
+  }
+
+  void _navigate() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    isLogged = preferences.getBool('isLogged') ?? false;
+    // aici o sa fie un if pentru cand am si celelalte ecrane
+    Navigator.pushReplacementNamed(context, "/intro_screen");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
