@@ -1,5 +1,5 @@
 class Models {
-  final String image;
+  String image;
   final String title;
   final String text;
   Models({required this.image, required this.title, required this.text});
@@ -15,7 +15,7 @@ List<Models> models = [
       title: 'Variety Of Food',
       text: 'Set your location to start exploring restaurants around you'),
   Models(
-      image: 'assets/search_place',
+      image: 'assets/search_place.jpg',
       title: 'Search Place',
       text: 'Set your location to start exploring restaurants around you'),
 ];
