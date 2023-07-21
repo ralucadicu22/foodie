@@ -18,8 +18,18 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
     emit(state.copyWith(state: SplashScreenState.loading));
     await Future.delayed(Duration(seconds: 10));
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    bool isFirstTime = preferences.getBool('isFirstTime') ?? false;
-
-    emit(state.copyWith(state: SplashScreenState.loaded));
+    bool isFirstTime = preferences.getBool('isFirstTime') ?? true;
+    bool isLoggedIn = preferences.getBool('isLoggedIn') ?? false;
+    if (isFirstTime) {
+      await preferences.setBool('isFirstTime', false);
+      emit(state.copyWith(
+          state: SplashScreenState.loaded, redirect: PageRedirect.firstTime));
+    } else if (isLoggedIn) {
+      emit(state.copyWith(
+          state: SplashScreenState.loaded, redirect: PageRedirect.home));
+    } else {
+      emit(state.copyWith(
+          state: SplashScreenState.loaded, redirect: PageRedirect.login));
+    }
   }
 }

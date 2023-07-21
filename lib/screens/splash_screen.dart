@@ -12,10 +12,23 @@ class SplashScreen extends StatelessWidget {
         child: BlocListener<SplashBloc, SplashState>(
             listener: (context, state) {
               if (state.state == SplashScreenState.loaded) {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => IntroScreen()),
-                );
+                if (state.redirect == PageRedirect.firstTime) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => IntroScreen()),
+                  );
+                }
+                // if (state.redirect == PageRedirect.home)
+                //   Navigator.pushReplacement(
+                //     context,
+                //     MaterialPageRoute(builder: (context) => HomeScreen()),
+                //   );
+                // if (state.redirect == PageRedirect.login) {
+                //   Navigator.pushReplacement(
+                //     context,
+                //     MaterialPageRoute(builder: (context) => LoginScreen()),
+                //   );
+                // }
               }
             },
             child: Scaffold(
