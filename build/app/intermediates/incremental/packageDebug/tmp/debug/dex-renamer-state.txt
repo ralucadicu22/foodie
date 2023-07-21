@@ -1,4 +1,4 @@
-#Fri Jul 21 12:00:46 EEST 2023
+#Fri Jul 21 12:53:05 EEST 2023
 base.0=C\:\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

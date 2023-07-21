@@ -1,8 +1,12 @@
 // import 'dart:async';
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/bloc/splash_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/screens/intro_screen.dart';
+import 'package:restaurant_app/colors.dart';
+import 'package:restaurant_app/assets.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -32,29 +36,22 @@ class SplashScreen extends StatelessWidget {
               }
             },
             child: Scaffold(
-              backgroundColor: Color.fromARGB(255, 255, 193, 7),
+              backgroundColor: AppColors.color1,
               appBar: AppBar(
-                backgroundColor: Color.fromARGB(255, 241, 145, 10),
+                backgroundColor: AppColors.color2,
                 title: Text(
                   'Discover your food',
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                    shadows: [
-                      Shadow(
-                        color: Colors.black,
-                        offset: Offset(1, 1),
-                        blurRadius: 2,
-                      ),
-                    ],
+                    color: AppColors.black,
                   ),
                 ),
                 actions: [
                   IconButton(
                     icon: const Icon(Icons.food_bank_outlined),
                     onPressed: () {},
-                    color: Colors.black,
+                    color: AppColors.black,
                   )
                 ],
                 centerTitle: true,
@@ -66,8 +63,8 @@ class SplashScreen extends StatelessWidget {
                   Stack(
                     alignment: Alignment.center,
                     children: [
-                      Image(
-                        image: AssetImage('assets/food-1.jpg'),
+                      Image.asset(
+                        AppAssets.ass1,
                         alignment: Alignment.topCenter,
                         fit: BoxFit.cover,
                         opacity: AlwaysStoppedAnimation(.7),
@@ -78,13 +75,6 @@ class SplashScreen extends StatelessWidget {
                           fontSize: 18.0,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              color: Colors.black87,
-                              offset: Offset(1, 1),
-                              blurRadius: 2,
-                            ),
-                          ],
                         ),
                         textAlign: TextAlign.right,
                       ),
@@ -99,9 +89,9 @@ class SplashScreen extends StatelessWidget {
                         alignment: Alignment.bottomRight,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(12)),
-                          color: Color.fromARGB(255, 241, 145, 10),
+                          color: AppColors.color2,
                         ),
-                        child: Image.asset('assets/food-2.jpg',
+                        child: Image.asset(AppAssets.ass2,
                             width: 150,
                             height: 115,
                             fit: BoxFit.cover,
@@ -109,7 +99,7 @@ class SplashScreen extends StatelessWidget {
                       ),
                       ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.transparent,
+                          primary: AppColors.transparent,
                         ),
                         onPressed: () {},
                         icon: Icon(

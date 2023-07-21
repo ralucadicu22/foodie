@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/colors.dart';
 import 'models.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -13,7 +16,7 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 180, 74),
+      backgroundColor: AppColors.color3,
       body: Column(
         children: [
           Expanded(
@@ -99,12 +102,12 @@ class _IntroScreenState extends State<IntroScreen> {
 
   Container buildDot(int index, BuildContext context) {
     return Container(
-      height: 10,
-      width: currentIndex == index ? 20 : 10,
-      margin: EdgeInsets.only(right: 3),
-      decoration: BoxDecoration(
+        height: 10,
+        width: currentIndex == index ? 20 : 10,
+        margin: EdgeInsets.only(right: 3),
+        decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
-          color: Color.fromARGB(255, 237, 237, 237)),
-    );
+          color: AppColors.white,
+        ));
   }
 }
