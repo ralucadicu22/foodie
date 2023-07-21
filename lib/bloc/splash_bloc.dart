@@ -18,7 +18,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
 
   init() async {
     emit(state.copyWith(state: SplashScreenState.loading));
-    await Future.delayed(Duration(seconds: 10));
+    await Future.delayed(Duration(seconds: 5));
     SharedPreferences preferences = await SharedPreferences.getInstance();
     bool isFirstTime = preferences.getBool('isFirstTime') ?? true;
     bool isLoggedIn = preferences.getBool('isLoggedIn') ?? false;

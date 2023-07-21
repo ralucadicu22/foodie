@@ -8,6 +8,8 @@ import 'package:restaurant_app/screens/intro_screen.dart';
 import 'package:restaurant_app/colors.dart';
 import 'package:restaurant_app/assets.dart';
 
+import '../login_screen.dart';
+
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,12 +29,12 @@ class SplashScreen extends StatelessWidget {
                 //     context,
                 //     MaterialPageRoute(builder: (context) => HomeScreen()),
                 //   );
-                // if (state.redirect == PageRedirect.login) {
-                //   Navigator.pushReplacement(
-                //     context,
-                //     MaterialPageRoute(builder: (context) => LoginScreen()),
-                //   );
-                // }
+                if (state.redirect == PageRedirect.login) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                  );
+                }
               }
             },
             child: Scaffold(
