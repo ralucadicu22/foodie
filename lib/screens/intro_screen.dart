@@ -101,15 +101,16 @@ class IntroScreen extends StatelessWidget {
           ),
         ));
   }
+}
 
-  Container buildDot(int index, int currentIndex) {
-    return Container(
-        height: 10,
-        width: currentIndex == index ? 20 : 10,
-        margin: EdgeInsets.only(right: 3),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(18),
-          color: AppColors.white,
-        ));
-  }
+buildDot(int index, int currentIndex) {
+  return Container(
+      height: 10,
+      alignment: Alignment.center,
+      width: currentIndex == index ? 20 : 10,
+      margin: EdgeInsets.only(right: 3),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(18),
+        color: AppColors.white,
+      ));
 }
