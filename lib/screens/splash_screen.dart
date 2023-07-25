@@ -21,7 +21,7 @@ class SplashScreen extends StatelessWidget {
                 if (state.redirect == PageRedirect.firstTime) {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => IntroScreen()),
+                    MaterialPageRoute(builder: (context) => MyIntro()),
                   );
                 }
                 // if (state.redirect == PageRedirect.home)
@@ -32,7 +32,7 @@ class SplashScreen extends StatelessWidget {
                 if (state.redirect == PageRedirect.login) {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                    MaterialPageRoute(builder: (context) => MyLogin()),
                   );
                 }
               }

@@ -1,12 +1,25 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/assets.dart';
+import 'package:restaurant_app/bloc/login_bloc.dart';
 import 'colors.dart';
+
+class MyLogin extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (context) => LoginBloc(),
+      child: LoginScreen(),
+    );
+  }
+}
 
 class LoginScreen extends StatelessWidget {
   final TextEditingController _email = TextEditingController();
   final TextEditingController _pass = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +91,9 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    BlocProvider.of<LoginBloc>(context).add(LogInwithGoogle());
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
@@ -105,7 +120,10 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    BlocProvider.of<LoginBloc>(context)
+                        .add(LoginwithFacebook());
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
@@ -132,7 +150,21 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            BlocListener<LoginBloc, LoginState>(
+              listener: (context, state) {
+                if (state.state == LoginScreenState.loading) {
+                  CircularProgressIndicator();
+                } else if (state.state == LoginScreenState.error) {
+                  Text('An error has occurred');
+                } else if (state.state == LoginScreenState.success) {
+                  Container(
+                    color: Colors.pinkAccent,
+                  );
+                }
+              },
+              child: Container(),
+            ),
           ],
         ),
       ),
