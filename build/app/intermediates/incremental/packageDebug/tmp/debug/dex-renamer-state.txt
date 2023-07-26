@@ -1,4 +1,4 @@
-#Tue Jul 25 16:56:22 EEST 2023
+#Wed Jul 26 11:02:42 EEST 2023
 base.0=C\:\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 base.1=C\:\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 base.2=C\:\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex

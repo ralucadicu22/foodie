@@ -54,7 +54,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   }
 
   Future<UserCredential> signInWithFacebook() async {
-    final LoginResult loginResult = await FacebookAuth.instance.login();
+    final LoginResult loginResult = await FacebookAuth.instance.login(
+      permissions: ['email', 'public profile'],
+    );
 
     final OAuthCredential facebookAuthCredential =
         FacebookAuthProvider.credential(loginResult.accessToken!.token);
