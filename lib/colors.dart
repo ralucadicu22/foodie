@@ -7,4 +7,5 @@ class AppColors {
   static Color color3 = Color.fromARGB(255, 255, 180, 74);
   static Color transparent = Colors.transparent;
   static Color white = Colors.white;
+  static Color grey = Color.fromARGB(255, 79, 77, 77);
 }

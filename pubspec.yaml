@@ -50,7 +50,7 @@ dependencies:
  
   flutter_facebook_auth: '^3.5.0'
   firebase_auth: ^4.7.1
-  
+  location: ^5.0.1 
   
 
 dev_dependencies:
