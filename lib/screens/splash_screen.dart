@@ -4,9 +4,11 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/bloc/splash_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:restaurant_app/screens/home.dart';
 import 'package:restaurant_app/screens/intro_screen.dart';
 import 'package:restaurant_app/colors.dart';
 import 'package:restaurant_app/assets.dart';
+import 'package:restaurant_app/screens/main_screen.dart';
 
 import '../login_screen.dart';
 
@@ -24,11 +26,12 @@ class SplashScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => MyIntro()),
                   );
                 }
-                // if (state.redirect == PageRedirect.home)
-                //   Navigator.pushReplacement(
-                //     context,
-                //     MaterialPageRoute(builder: (context) => HomeScreen()),
-                //   );
+                if (state.redirect == PageRedirect.home) {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyMain()),
+                  );
+                }
                 if (state.redirect == PageRedirect.login) {
                   Navigator.pushReplacement(
                     context,

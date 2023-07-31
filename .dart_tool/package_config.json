@@ -56,6 +56,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dots_indicator",
+      "rootUri": "file:///C:/Users/raldicu/AppData/Local/Pub/Cache/hosted/pub.dev/dots_indicator-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///C:/Users/raldicu/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.5",
       "packageUri": "lib/",
@@ -440,7 +446,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-27T08:45:19.782812Z",
+  "generated": "2023-07-31T10:53:04.049393Z",
   "generator": "pub",
   "generatorVersion": "3.0.5"
 }

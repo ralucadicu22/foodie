@@ -3,6 +3,7 @@ import 'package:equatable/equatable.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
@@ -27,6 +28,8 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   Future<void> _loginwithgoogle() async {
     emit(state.copyWith(state: LoginScreenState.loading));
     try {
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      preferences.setBool('isLoggedIn', true);
       final user = await _googleSignIn.signIn();
       if (user == null) {
         emit(state.copyWith(state: LoginScreenState.unauthenticated));
@@ -41,6 +44,8 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   Future<void> _loginwithfacebook() async {
     emit(state.copyWith(state: LoginScreenState.loading));
     try {
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      preferences.setBool('isLoggedIn', true);
       final userCredential = await signInWithFacebook();
       print('Facebook User: ${userCredential.user?.displayName}');
 

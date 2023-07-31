@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant_app/screens/main_screen.dart';
+import 'package:restaurant_app/screens/home.dart';
 
 import 'screens/splash_screen.dart';
 
@@ -11,8 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: SplashScreen(),
-      home: MyMain(),
+      home: SplashScreen(),
     );
   }
 }

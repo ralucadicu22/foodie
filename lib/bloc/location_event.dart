@@ -8,3 +8,5 @@ class LocationEvent extends Equatable {
 }
 
 class FetchLocation extends LocationEvent {}
+
+class RequestLocation extends LocationEvent {}
