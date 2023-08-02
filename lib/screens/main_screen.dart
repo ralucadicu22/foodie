@@ -2,9 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:restaurant_app/bloc/location_bloc.dart';
-import 'package:restaurant_app/colors.dart';
+import 'package:restaurant_app/bloc/location/location_bloc.dart';
+import 'package:restaurant_app/models/colors.dart';
+import 'package:restaurant_app/models/navigation_bar.dart';
 import 'package:restaurant_app/screens/home.dart';
+import 'package:restaurant_app/screens/home_screen.dart';
 
 class MyMain extends StatelessWidget {
   @override
@@ -33,7 +35,7 @@ class MainScreen extends StatelessWidget {
           } else if (state.state == LocationStateEnum.granted) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => Home()),
+              MaterialPageRoute(builder: (context) => MyHomeScreen()),
             );
           }
         },
@@ -100,27 +102,7 @@ class MainScreen extends StatelessWidget {
           );
         },
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.white,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined, color: AppColors.black),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.location_on_outlined, color: AppColors.black),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_border_outlined, color: AppColors.black),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_2_outlined, color: AppColors.black),
-            label: '',
-          ),
-        ],
-      ),
+      bottomNavigationBar: MyNavBar(),
     );
   }
 }
