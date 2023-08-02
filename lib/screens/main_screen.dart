@@ -35,7 +35,7 @@ class MainScreen extends StatelessWidget {
           } else if (state.state == LocationStateEnum.granted) {
             Navigator.pushReplacement(
               context,
-              MaterialPageRoute(builder: (context) => MyHomeScreen()),
+              MaterialPageRoute(builder: (context) => MyHome()),
             );
           }
         },

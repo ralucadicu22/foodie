@@ -3,12 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/home_screen/bloc/home_screen_bloc.dart';
 import 'package:restaurant_app/models/buildScroll.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
+import 'package:restaurant_app/models/restaurant_model.dart';
 
 class MyHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) => HomeScreenBloc(), child: HomeScreen());
+        create: (context) => HomeScreenBloc()..add(FetchData()),
+        child: HomeScreen());
   }
 }
 
@@ -43,11 +45,11 @@ class HomeScreen extends StatelessWidget {
             BuildScroll('TakeAway Restaurants', state.takeaway, () {}),
           ]);
         } else if (state.state == HomeState.error) {
-          Text('Facing errors trying to fetch data ');
+          return Text('Facing errors trying to fetch data ');
+        } else {
+          return Container();
         }
-        return Container();
       }),
-      bottomNavigationBar: MyNavBar(),
     );
   }
 }

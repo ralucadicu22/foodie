@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:restaurant_app/bloc/intro_bloc.dart';
-import 'package:restaurant_app/colors.dart';
-import 'package:restaurant_app/login_screen.dart';
+import 'package:restaurant_app/bloc/intro/intro_bloc.dart';
+import 'package:restaurant_app/models/colors.dart';
+import 'package:restaurant_app/screens/login_screen.dart';
 import 'models.dart';
-import 'package:restaurant_app/dot.dart';
+import 'package:restaurant_app/models/dot.dart';
 
 class MyIntro extends StatelessWidget {
   @override
