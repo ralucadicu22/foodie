@@ -56,7 +56,7 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return data['businesses']; //  (data['businesses'] as List).map((e) => RestuarantModel.fromJson(e)).toList();
     } else {
       throw Exception('Failed to load data');
     }
