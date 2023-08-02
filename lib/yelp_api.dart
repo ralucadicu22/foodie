@@ -29,7 +29,9 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return (data['businesses'] as List)
+          .map((e) => Restaurant.fromJson(e))
+          .toList();
     } else {
       throw Exception('Failed to load data');
     }
@@ -42,7 +44,7 @@ class YelpApiClient {
     final Map<String, String> headers = {
       'Authorization': AppConfig().security_key,
     };
-    final Map<String, dynamic> queryParameters = {
+    final Map<String, String> queryParameters = {
       'term': term,
       'latitude': latitude.toString(),
       'longitude': longitude.toString(),
@@ -56,7 +58,9 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return (data['businesses'] as List)
+          .map((e) => Restaurant.fromJson(e))
+          .toList();
     } else {
       throw Exception('Failed to load data');
     }
@@ -69,7 +73,7 @@ class YelpApiClient {
     final Map<String, String> headers = {
       'Authorization': AppConfig().security_key,
     };
-    final Map<String, dynamic> queryParameters = {
+    final Map<String, String> queryParameters = {
       'term': term,
       'latitude': latitude.toString(),
       'longitude': longitude.toString(),
@@ -83,7 +87,9 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return (data['businesses'] as List)
+          .map((e) => Restaurant.fromJson(e))
+          .toList();
     } else {
       throw Exception('Failed to load data');
     }
@@ -96,7 +102,7 @@ class YelpApiClient {
     final Map<String, String> headers = {
       'Authorization': AppConfig().security_key,
     };
-    final Map<String, dynamic> queryParameters = {
+    final Map<String, String> queryParameters = {
       'term': term,
       'latitude': latitude.toString(),
       'longitude': longitude.toString(),
@@ -110,7 +116,9 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return (data['businesses'] as List)
+          .map((e) => Restaurant.fromJson(e))
+          .toList();
     } else {
       throw Exception('Failed to load data');
     }
@@ -123,7 +131,7 @@ class YelpApiClient {
     final Map<String, String> headers = {
       'Authorization': AppConfig().security_key,
     };
-    final Map<String, dynamic> queryParameters = {
+    final Map<String, String> queryParameters = {
       'term': term,
       'latitude': latitude.toString(),
       'longitude': longitude.toString(),
@@ -137,7 +145,9 @@ class YelpApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['businesses'];
+      return (data['businesses'] as List)
+          .map((e) => Restaurant.fromJson(e))
+          .toList();
     } else {
       throw Exception('Failed to load data');
     }

@@ -1,6 +1,6 @@
 class AppConfig {
-  String url_base = 'https://api.yelp.com';
-  String path = '/v3/businesses/search';
-  String security_key =
-      'Bearer gW3UrUJaOU6Y6lzBSnyltFkMmgq0euWNCy-Bq-Tp4J6WVCfKgZCn5AdovrJk-n_5rglCBGiTAA3mubt4960cI2Xtd2teyh1P7Vj4FKLOaRiLuJjNyvl_ttcFDH_HZHYx';
+  final String url_base = 'https://api.yelp.com';
+  final String path = '/v3/businesses/search';
+  final String security_key =
+      'Bearer jbH2y2WehwaV_WrooLAhyj-PrIjAUg7IhpH2ISpfjo0DGh82HV_8FcOxsgGMfHb9OMAphxC6g172YtgqF5RxIF_tjjsmbnlQWceuAJkGR2SRWmQGNO9fl9HnnCrKZHYx';
 }

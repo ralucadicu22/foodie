@@ -10,7 +10,7 @@ class RestaurantWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: 120,
+          width: 300,
           height: 120,
           decoration: BoxDecoration(
               image: DecorationImage(
@@ -37,7 +37,7 @@ class RestaurantWidget extends StatelessWidget {
                     ),
                     SizedBox(height: 2),
                     Text(
-                      model.location,
+                      model.location.address1,
                       style: TextStyle(
                         color: AppColors.white,
                       ),
