@@ -13,14 +13,14 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:3:5-66
-15-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:3:5-66
+15-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:3:22-64
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:5-78
-16-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:22-76
+16-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:5-78
+16-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:2-77
-17-->C:\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:19-75
+17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:2-77
+17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:19-75
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 18-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:5-79
 18-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:22-76
@@ -95,25 +95,25 @@
 73            android:value="2" />
 74
 75        <service
-75-->[:firebase_auth] C:\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+75-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[:firebase_auth] C:\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+76-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 77            android:directBootAware="true"
 77-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
 78            android:exported="false" >
 78-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
 79            <meta-data
-79-->[:firebase_auth] C:\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+79-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-80-->[:firebase_auth] C:\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+80-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_auth] C:\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+81-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 82            <meta-data
-82-->[:firebase_core] C:\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+82-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] C:\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+83-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] C:\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+84-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 85            <meta-data
 85-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
 86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -122,15 +122,15 @@
 87-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:71:17-82
 88        </service>
 89        <service
-89-->[:location] C:\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+89-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
 90            android:name="com.lyokone.location.FlutterLocationService"
-90-->[:location] C:\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+90-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
 91            android:enabled="true"
-91-->[:location] C:\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+91-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
 92            android:exported="false"
-92-->[:location] C:\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+92-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 93            android:foregroundServiceType="location" />
-93-->[:location] C:\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+93-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
 94
 95        <uses-library
 95-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
