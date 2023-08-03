@@ -10,7 +10,6 @@ class RestaurantWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          width: 300,
           height: 120,
           decoration: BoxDecoration(
               image: DecorationImage(

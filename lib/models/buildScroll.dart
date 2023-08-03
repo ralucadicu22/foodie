@@ -13,29 +13,32 @@ class BuildScroll extends StatelessWidget {
     return SliverToBoxAdapter(
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                title,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.0,
+          Padding(
+            padding: EdgeInsets.only(left: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                  ),
                 ),
-              ),
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'See all',
-                  style: TextStyle(fontSize: 20, color: AppColors.lightblue),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'See all',
+                    style: TextStyle(fontSize: 20, color: AppColors.lightblue),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           Container(
             height: 120,
             child: PageView(
-              pageSnapping: false,
+              padEnds: false,
               scrollDirection: Axis.horizontal,
               controller: PageController(initialPage: 0, viewportFraction: 0.7),
               children: List.generate(
@@ -43,7 +46,6 @@ class BuildScroll extends StatelessWidget {
                 (index) => Card(
                   margin: EdgeInsets.all(8),
                   child: Container(
-                    width: 120,
                     height: 120,
                     alignment: Alignment.center,
                     child: RestaurantWidget(items[index]),

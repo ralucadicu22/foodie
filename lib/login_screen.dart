@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/bloc/login/login_bloc.dart';
-import 'package:restaurant_app/models/colors.dart';
-import 'package:restaurant_app/screens/main_screen.dart';
+import 'models/colors.dart';
 
 class MyLogin extends StatelessWidget {
   @override
@@ -159,11 +158,9 @@ class LoginScreen extends StatelessWidget {
                 } else if (state.state == LoginScreenState.error) {
                   Text('An error has occurred');
                 } else if (state.state == LoginScreenState.success) {
-                  // Container(
-                  //   color: Colors.pinkAccent,
-                  // );
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MyMain()));
+                  Container(
+                    color: Colors.pinkAccent,
+                  );
                 }
               },
               child: Container(),
