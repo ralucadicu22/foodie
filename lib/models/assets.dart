@@ -6,4 +6,5 @@ class AppAssets {
   static String ass5 = 'assets/variety_of_food.png';
   static String google = 'assets/logo_google.png';
   static String facebook = 'assets/logo_facebook.png';
+  static String food = 'assets/food.jpg';
 }

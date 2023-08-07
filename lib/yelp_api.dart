@@ -22,8 +22,9 @@ class YelpApiClient {
       'term': term,
     };
 
-    final Uri uri = Uri.parse('${AppConfig().url_base}${AppConfig().path}')
-        .replace(queryParameters: queryParameters);
+    final Uri uri =
+        Uri.parse('${AppConfig().url_base}${AppConfig().pathSearch}')
+            .replace(queryParameters: queryParameters);
 
     final response = await http.get(uri, headers: headers);
 
@@ -51,8 +52,9 @@ class YelpApiClient {
       'attributes': 'hot_and_new',
     };
 
-    final Uri uri = Uri.parse('${AppConfig().url_base}${AppConfig().path}')
-        .replace(queryParameters: queryParameters);
+    final Uri uri =
+        Uri.parse('${AppConfig().url_base}${AppConfig().pathSearch}')
+            .replace(queryParameters: queryParameters);
 
     final response = await http.get(uri, headers: headers);
 
@@ -80,8 +82,9 @@ class YelpApiClient {
       'attributes': 'deals',
     };
 
-    final Uri uri = Uri.parse('${AppConfig().url_base}${AppConfig().path}')
-        .replace(queryParameters: queryParameters);
+    final Uri uri =
+        Uri.parse('${AppConfig().url_base}${AppConfig().pathSearch}')
+            .replace(queryParameters: queryParameters);
 
     final response = await http.get(uri, headers: headers);
 
@@ -109,8 +112,9 @@ class YelpApiClient {
       'attributes': 'restaurants_delivery',
     };
 
-    final Uri uri = Uri.parse('${AppConfig().url_base}${AppConfig().path}')
-        .replace(queryParameters: queryParameters);
+    final Uri uri =
+        Uri.parse('${AppConfig().url_base}${AppConfig().pathSearch}')
+            .replace(queryParameters: queryParameters);
 
     final response = await http.get(uri, headers: headers);
 
@@ -138,8 +142,9 @@ class YelpApiClient {
       'attributes': 'restaurants_takeaway',
     };
 
-    final Uri uri = Uri.parse('${AppConfig().url_base}${AppConfig().path}')
-        .replace(queryParameters: queryParameters);
+    final Uri uri =
+        Uri.parse('${AppConfig().url_base}${AppConfig().pathSearch}')
+            .replace(queryParameters: queryParameters);
 
     final response = await http.get(uri, headers: headers);
 

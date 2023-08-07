@@ -9,4 +9,5 @@ class AppColors {
   static Color white = Colors.white;
   static Color grey = Color.fromARGB(255, 79, 77, 77);
   static Color lightblue = Color.fromARGB(255, 38, 125, 195);
+  static Color pink = const Color.fromARGB(255, 232, 60, 117);
 }

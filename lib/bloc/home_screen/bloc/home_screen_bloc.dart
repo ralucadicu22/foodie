@@ -37,6 +37,7 @@ class HomeScreenBloc extends Bloc<HomeScreenEvent, HomeScreenState> {
             takeaway: takeaway,
             state: HomeState.loaded));
       } catch (error) {
+        debugPrint(error.toString());
         emit(state.copyWith(state: HomeState.error));
       }
     });

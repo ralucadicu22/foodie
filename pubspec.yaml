@@ -86,6 +86,7 @@ flutter:
     - assets/variety_of_food.png
     - assets/logo_google.png
     - assets/logo_facebook.png
+    - assets/food.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

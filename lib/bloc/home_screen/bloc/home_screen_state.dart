@@ -9,16 +9,15 @@ class HomeScreenState extends Equatable {
   final List<Restaurant> delivery;
   final List<Restaurant> takeaway;
   final HomeState state;
-  final HomeState error;
 
-  const HomeScreenState(
-      {this.nearbyRestaurants = const [],
-      this.hotandnew = const [],
-      this.deals = const [],
-      this.delivery = const [],
-      this.takeaway = const [],
-      this.state = HomeState.init,
-      this.error = HomeState.error});
+  const HomeScreenState({
+    this.nearbyRestaurants = const [],
+    this.hotandnew = const [],
+    this.deals = const [],
+    this.delivery = const [],
+    this.takeaway = const [],
+    this.state = HomeState.init,
+  });
 
   HomeScreenState copyWith({
     List<Restaurant>? nearbyRestaurants,
@@ -27,19 +26,18 @@ class HomeScreenState extends Equatable {
     List<Restaurant>? delivery,
     List<Restaurant>? takeaway,
     HomeState? state,
-    HomeState? error,
   }) {
     return HomeScreenState(
-        nearbyRestaurants: nearbyRestaurants ?? this.nearbyRestaurants,
-        hotandnew: hotandnew ?? this.hotandnew,
-        deals: deals ?? this.deals,
-        delivery: delivery ?? this.delivery,
-        takeaway: takeaway ?? this.takeaway,
-        state: state ?? this.state,
-        error: error ?? this.error);
+      nearbyRestaurants: nearbyRestaurants ?? this.nearbyRestaurants,
+      hotandnew: hotandnew ?? this.hotandnew,
+      deals: deals ?? this.deals,
+      delivery: delivery ?? this.delivery,
+      takeaway: takeaway ?? this.takeaway,
+      state: state ?? this.state,
+    );
   }
 
   @override
   List<Object?> get props =>
-      [nearbyRestaurants, hotandnew, deals, delivery, takeaway, state, error];
+      [nearbyRestaurants, hotandnew, deals, delivery, takeaway, state];
 }
