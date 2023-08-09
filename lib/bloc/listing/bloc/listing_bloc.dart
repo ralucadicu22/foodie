@@ -28,10 +28,16 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
         List<Restaurant> takeaway = await apiClient.fetchTakeAway(
             term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
         final categories = [
-          CategoriesRestaurants('Most Popular', nearbyRestaurants),
+          CategoriesRestaurants('Most Popular', hotandnew),
           CategoriesRestaurants('Meal Deals', deals),
           CategoriesRestaurants('Restaurants with delivery', delivery),
           CategoriesRestaurants('TakeAway Restaurants', takeaway),
+        ];
+        List<String> restaurantNames = [
+          ...hotandnew.map((restaurant) => restaurant.title),
+          ...deals.map((restaurant) => restaurant.title),
+          ...delivery.map((restaurant) => restaurant.title),
+          ...takeaway.map((restaurant) => restaurant.title),
         ];
         emit(state.copyWith(
             categories: categories, state: ListingStateEnum.loaded));

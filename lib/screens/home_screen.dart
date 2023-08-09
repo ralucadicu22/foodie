@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
       body: BlocBuilder<HomeScreenBloc, HomeScreenState>(
           builder: (context, state) {
         if (state.state == HomeState.loading) {
-          return CircularProgressIndicator();
+          return Center(child: CircularProgressIndicator());
         } else if (state.state == HomeState.loaded) {
           return CustomScrollView(slivers: [
             SliverToBoxAdapter(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app/models/categories.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/models/restaurant_widget.dart';
+import 'package:restaurant_app/screens/listing_screen.dart';
 import 'colors.dart';
 
 class BuildScroll extends StatelessWidget {
@@ -26,7 +28,15 @@ class BuildScroll extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            MyListingScreen(initialCategory: title),
+                      ),
+                    );
+                  },
                   child: Text(
                     'See all',
                     style: TextStyle(fontSize: 20, color: AppColors.lightblue),

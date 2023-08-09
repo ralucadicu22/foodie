@@ -18,10 +18,11 @@ class ListContainer extends StatelessWidget {
       decoration:
           BoxDecoration(border: Border.all(color: AppColors.grey, width: 1)),
       child: Padding(
-        padding: const EdgeInsets.only(left: 15, right: 5, top: 15),
+        padding: const EdgeInsets.only(left: 10, top: 10, right: 5),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
                 model.display_phone,
@@ -34,7 +35,7 @@ class ListContainer extends StatelessWidget {
                 model.title,
                 style: TextStyle(
                     color: AppColors.black,
-                    fontSize: 15,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -44,9 +45,12 @@ class ListContainer extends StatelessWidget {
                 model.location.address1,
                 style: TextStyle(color: AppColors.grey, fontSize: 15),
               ),
+              SizedBox(
+                height: 5,
+              ),
               Text(
                 model.categories.join(', '),
-                style: TextStyle(color: AppColors.grey, fontSize: 15),
+                style: TextStyle(color: AppColors.grey, fontSize: 12),
               )
             ],
           ),
@@ -68,7 +72,7 @@ class ListContainer extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 25,
               ),
               ElevatedButton.icon(
                   onPressed: () {},

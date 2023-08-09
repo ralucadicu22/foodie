@@ -19,6 +19,7 @@ class ListingState extends Equatable {
   ListingState copyWith({
     ListingStateEnum? state,
     List<CategoriesRestaurants>? categories,
+    List<String>? restaurantNames,
   }) {
     return ListingState(
       state: state ?? this.state,
@@ -27,5 +28,8 @@ class ListingState extends Equatable {
   }
 
   @override
-  List<Object> get props => [state, categories];
+  List<Object> get props => [
+        state,
+        categories,
+      ];
 }

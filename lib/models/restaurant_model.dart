@@ -19,7 +19,6 @@ class Restaurant {
       required this.rating,
       required this.categories});
   static Restaurant fromJson(Map<String, dynamic> json) {
-    debugPrint(json.toString());
     return Restaurant(
         location: LocationData.fromJson(json['location']),
         image_url: json['image_url'] ?? '',

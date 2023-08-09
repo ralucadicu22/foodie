@@ -1,28 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/listing/bloc/listing_bloc.dart';
-
 import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/list_container.dart';
 import 'package:restaurant_app/screens/home.dart';
+import 'package:restaurant_app/models/restaurant_model.dart';
 
 class MyListingScreen extends StatelessWidget {
+  final String initialCategory;
+  MyListingScreen({required this.initialCategory});
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-        create: (context) => ListingBloc()..add(LoadAllRestaurants()),
-        child: ListingScreen());
+      create: (context) => ListingBloc()..add(LoadAllRestaurants()),
+      child: ListingScreen(
+        initialCategory: initialCategory,
+      ),
+    );
   }
 }
 
 class ListingScreen extends StatelessWidget {
+  final String initialCategory;
+  final ScrollController _scrollController = ScrollController();
+
+  ListingScreen({required this.initialCategory});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
+        controller: _scrollController,
         slivers: [
           SliverToBoxAdapter(
+            key: Key(initialCategory),
             child: Column(
               children: [
                 Container(
@@ -96,12 +108,58 @@ class ListingScreen extends StatelessWidget {
               ),
             ),
           ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 50,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: BlocBuilder<ListingBloc, ListingState>(
+                  builder: (context, state) {
+                    if (state.state == ListingStateEnum.loaded) {
+                      return Row(
+                        children: state.categories.map((category) {
+                          return InkWell(
+                            onTap: () {
+                              _scrollController.animateTo(
+                                _scrollController.position.minScrollExtent +
+                                    state.categories.indexWhere((category) =>
+                                            category.title == initialCategory) *
+                                        2350.0,
+                                duration: Duration(milliseconds: 300),
+                                curve: Curves.easeInOut,
+                              );
+                            },
+                            child: Container(
+                              padding: EdgeInsets.symmetric(horizontal: 16),
+                              alignment: Alignment.center,
+                              child: Text(
+                                category.title,
+                                style: TextStyle(
+                                  color: AppColors.black,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          );
+                        }).toList(),
+                      );
+                    } else if (state.state == ListingStateEnum.error) {
+                      return Text('Error loading data');
+                    } else {
+                      return Container();
+                    }
+                  },
+                ),
+              ),
+            ),
+          ),
           BlocBuilder<ListingBloc, ListingState>(
             builder: (context, state) {
               if (state.state == ListingStateEnum.loading) {
                 return SliverToBoxAdapter(
+                    child: Center(
                   child: CircularProgressIndicator(),
-                );
+                ));
               } else if (state.state == ListingStateEnum.loaded) {
                 return SliverList(
                   delegate: SliverChildBuilderDelegate(
