@@ -54,7 +54,7 @@ class Home extends StatelessWidget {
             Expanded(
               child: BlocBuilder<SearchBloc, SearchState>(
                   builder: (context, state) {
-                print("Search State: ${state.state}");
+                print('$state');
                 if (state.state == SearchStateEnum.loading) {
                   return Center(child: CircularProgressIndicator());
                 } else if (state.state == SearchStateEnum.loaded) {
@@ -67,9 +67,7 @@ class Home extends StatelessWidget {
                 } else if (state.state == SearchStateEnum.error) {
                   return Text('Error');
                 } else {
-                  return Container(
-                    color: Colors.pink,
-                  );
+                  return Container();
                 }
               }),
             ),

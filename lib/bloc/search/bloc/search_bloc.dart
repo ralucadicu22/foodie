@@ -16,15 +16,17 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
     on<SearchText>((event, emit) async {
       try {
         emit(state.copyWith(state: SearchStateEnum.loading));
-
-        List<Restaurant> nearbyRestaurants = state.nearbyRestaurants
+        List<Restaurant> nearbyRestaurants =
+            await apiClient.fetchnearbyRestaurants(
+                term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
+        List<Restaurant> filtredrestaurants = state.nearbyRestaurants
             .where((restaurant) => restaurant.title
                 .toLowerCase()
-                .contains(event.searchList.toLowerCase()))
+                .contains(event.searchList.toString()))
             .toList();
         emit(state.copyWith(
             state: SearchStateEnum.loaded,
-            nearbyRestaurants: nearbyRestaurants));
+            nearbyRestaurants: filtredrestaurants));
       } catch (error) {
         debugPrint(error.toString());
         emit(state.copyWith(state: SearchStateEnum.error));
