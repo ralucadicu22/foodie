@@ -8,8 +8,10 @@ import 'package:restaurant_app/bloc/search/bloc/search_bloc.dart';
 import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/list_container.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
+import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/screens/home_screen.dart';
 import 'package:restaurant_app/screens/listing_screen.dart';
+import 'package:searchfield/searchfield.dart';
 
 class MyHome extends StatelessWidget {
   @override
@@ -33,28 +35,21 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          appBar: AppBar(
-            title: TextFormField(
-              controller: TextEditingController(),
-              onChanged: (value) {
-                BlocProvider.of<SearchBloc>(context).add(SearchText(value));
-              },
-              decoration: InputDecoration(
-                labelText: 'Search',
-                filled: true,
-                fillColor: AppColors.white,
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.white),
-                ),
-                prefixIcon: Icon(Icons.search),
+          body: Column(children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: SearchField(
+                onSearchTextChanged: (searchText) {
+                  BlocProvider.of<SearchBloc>(context)
+                      .add(SearchText(searchText));
+                },
+                hint: 'Search',
+                suggestions: [],
               ),
             ),
-          ),
-          body: Column(children: [
             Expanded(
               child: BlocBuilder<SearchBloc, SearchState>(
                   builder: (context, state) {
-                print('$state');
                 if (state.state == SearchStateEnum.loading) {
                   return Center(child: CircularProgressIndicator());
                 } else if (state.state == SearchStateEnum.loaded) {

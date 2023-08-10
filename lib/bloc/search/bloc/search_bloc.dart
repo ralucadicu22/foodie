@@ -19,10 +19,10 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
         List<Restaurant> nearbyRestaurants =
             await apiClient.fetchnearbyRestaurants(
                 term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
-        List<Restaurant> filtredrestaurants = state.nearbyRestaurants
+        List<Restaurant> filtredrestaurants = nearbyRestaurants
             .where((restaurant) => restaurant.title
                 .toLowerCase()
-                .contains(event.searchList.toString()))
+                .contains(event.searchList.toLowerCase().toString()))
             .toList();
         emit(state.copyWith(
             state: SearchStateEnum.loaded,
