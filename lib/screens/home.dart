@@ -38,33 +38,28 @@ class Home extends StatelessWidget {
           body: Column(children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: SearchField(
-                onSearchTextChanged: (searchText) {
-                  BlocProvider.of<SearchBloc>(context)
-                      .add(SearchText(searchText));
-                },
-                hint: 'Search',
-                suggestions: [],
-              ),
-            ),
-            Expanded(
               child: BlocBuilder<SearchBloc, SearchState>(
-                  builder: (context, state) {
-                if (state.state == SearchStateEnum.loading) {
-                  return Center(child: CircularProgressIndicator());
-                } else if (state.state == SearchStateEnum.loaded) {
-                  return ListView.builder(
-                    itemCount: state.nearbyRestaurants.length,
-                    itemBuilder: (context, index) {
-                      return ListContainer(state.nearbyRestaurants[index]);
+                builder: (context, state) {
+                  return SearchField(
+                    itemHeight: 120,
+                    onSearchTextChanged: (searchText) {
+                      BlocProvider.of<SearchBloc>(context)
+                          .add(SearchText(searchText));
                     },
+                    hint: 'Search',
+                    suggestions: state.nearbyRestaurants
+                        .map((e) => SearchFieldListItem(e.title,
+                            child: Expanded(child: ListContainer(e))))
+                        .toList(),
+                    searchInputDecoration: InputDecoration(
+                        prefixIcon: Icon(Icons.search),
+                        prefixIconColor: AppColors.black,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            borderSide: BorderSide(color: AppColors.black))),
                   );
-                } else if (state.state == SearchStateEnum.error) {
-                  return Text('Error');
-                } else {
-                  return Container();
-                }
-              }),
+                },
+              ),
             ),
             Expanded(child: BlocBuilder<NavbarBloc, NavbarState>(
               builder: (context, state) {

@@ -8,24 +8,17 @@ import 'package:restaurant_app/screens/home.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 
 class MyListingScreen extends StatelessWidget {
-  final String initialCategory;
-  MyListingScreen({required this.initialCategory});
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => ListingBloc()..add(LoadAllRestaurants()),
-      child: ListingScreen(
-        initialCategory: initialCategory,
-      ),
+      child: ListingScreen(),
     );
   }
 }
 
 class ListingScreen extends StatelessWidget {
-  final String initialCategory;
   final ScrollController _scrollController = ScrollController();
-
-  ListingScreen({required this.initialCategory});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +27,6 @@ class ListingScreen extends StatelessWidget {
         controller: _scrollController,
         slivers: [
           SliverToBoxAdapter(
-            key: Key(initialCategory),
             child: Column(
               children: [
                 Container(
@@ -94,73 +86,15 @@ class ListingScreen extends StatelessWidget {
               ],
             ),
           ),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
-              child: Text(
-                'Restaurants list',
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  color: AppColors.black,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 50,
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: BlocBuilder<ListingBloc, ListingState>(
-                  builder: (context, state) {
-                    if (state.state == ListingStateEnum.loaded) {
-                      return Row(
-                        children: state.categories.map((category) {
-                          return InkWell(
-                            onTap: () {
-                              _scrollController.animateTo(
-                                _scrollController.position.minScrollExtent +
-                                    state.categories.indexWhere((category) =>
-                                            category.title == initialCategory) *
-                                        2350.0,
-                                duration: Duration(milliseconds: 300),
-                                curve: Curves.easeInOut,
-                              );
-                            },
-                            child: Container(
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              alignment: Alignment.center,
-                              child: Text(
-                                category.title,
-                                style: TextStyle(
-                                  color: AppColors.black,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          );
-                        }).toList(),
-                      );
-                    } else if (state.state == ListingStateEnum.error) {
-                      return Text('Error loading data');
-                    } else {
-                      return Container();
-                    }
-                  },
-                ),
-              ),
-            ),
-          ),
           BlocBuilder<ListingBloc, ListingState>(
             builder: (context, state) {
-              if (state.state == ListingStateEnum.loading) {
+              if (state is ListingLoadingState) {
                 return SliverToBoxAdapter(
-                    child: Center(
-                  child: CircularProgressIndicator(),
-                ));
-              } else if (state.state == ListingStateEnum.loaded) {
+                  child: Center(
+                    child: CircularProgressIndicator(),
+                  ),
+                );
+              } else if (state is ListingLoadedState) {
                 return SliverList(
                   delegate: SliverChildBuilderDelegate(
                     (context, index) {
@@ -189,7 +123,7 @@ class ListingScreen extends StatelessWidget {
                     childCount: state.categories.length,
                   ),
                 );
-              } else if (state == ListingStateEnum.error) {
+              } else if (state is ListingErrorState) {
                 return SliverToBoxAdapter(
                   child: Text('Error loading data'),
                 );

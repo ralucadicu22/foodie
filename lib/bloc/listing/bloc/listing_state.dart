@@ -1,35 +1,34 @@
 part of 'listing_bloc.dart';
 
-enum ListingStateEnum {
-  init,
-  loading,
-  loaded,
-  error,
-}
-
-class ListingState extends Equatable {
-  final ListingStateEnum state;
-  final List<CategoriesRestaurants> categories;
-
-  const ListingState({
-    this.state = ListingStateEnum.init,
-    this.categories = const [],
-  });
-
-  ListingState copyWith({
-    ListingStateEnum? state,
-    List<CategoriesRestaurants>? categories,
-    List<String>? restaurantNames,
-  }) {
-    return ListingState(
-      state: state ?? this.state,
-      categories: categories ?? this.categories,
-    );
-  }
+abstract class ListingState extends Equatable {
+  const ListingState();
 
   @override
-  List<Object> get props => [
-        state,
-        categories,
-      ];
+  List<Object> get props => [];
+}
+
+class ListingInitialState extends ListingState {}
+
+class ListingLoadingState extends ListingState {}
+
+class ListingLoadedState extends ListingState {
+  final List<CategoriesRestaurants> categories;
+
+  const ListingLoadedState({
+    required this.categories,
+  });
+
+  @override
+  List<Object> get props => [categories];
+}
+
+class ListingErrorState extends ListingState {
+  final String errorMessage;
+
+  const ListingErrorState({
+    required this.errorMessage,
+  });
+
+  @override
+  List<Object> get props => [errorMessage];
 }

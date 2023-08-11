@@ -9,6 +9,7 @@ class BuildScroll extends StatelessWidget {
   String title;
   final Function onpress;
   List<Restaurant> items;
+
   BuildScroll(this.title, this.items, this.onpress);
   @override
   Widget build(BuildContext context) {
@@ -32,8 +33,7 @@ class BuildScroll extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>
-                            MyListingScreen(initialCategory: title),
+                        builder: (context) => MyListingScreen(),
                       ),
                     );
                   },

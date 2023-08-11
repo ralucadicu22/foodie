@@ -1,4 +1,4 @@
-#Thu Aug 10 14:16:20 EEST 2023
+#Thu Aug 10 17:14:34 EEST 2023
 base.0=C\:\\Users\\raldicu\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 base.1=C\:\\Users\\raldicu\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 base.2=C\:\\Users\\raldicu\\src\\restaurant_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex

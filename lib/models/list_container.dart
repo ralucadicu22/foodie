@@ -58,7 +58,7 @@ class ListContainer extends StatelessWidget {
             children: [
               Container(
                 width: 60,
-                height: 25,
+                height: 20,
                 decoration: BoxDecoration(
                     color: AppColors.pink,
                     borderRadius: BorderRadius.all(Radius.circular(5.0))),

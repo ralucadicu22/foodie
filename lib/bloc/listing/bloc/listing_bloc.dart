@@ -11,11 +11,11 @@ final YelpApiClient apiClient = YelpApiClient(
     'jbH2y2WehwaV_WrooLAhyj-PrIjAUg7IhpH2ISpfjo0DGh82HV_8FcOxsgGMfHb9OMAphxC6g172YtgqF5RxIF_tjjsmbnlQWceuAJkGR2SRWmQGNO9fl9HnnCrKZHYx');
 
 class ListingBloc extends Bloc<ListingEvent, ListingState> {
-  ListingBloc() : super(ListingState()) {
+  ListingBloc() : super(ListingInitialState()) {
     on<ListingEvent>((event, emit) {});
     on<LoadAllRestaurants>((event, emit) async {
       try {
-        emit(state.copyWith(state: ListingStateEnum.loading));
+        emit(ListingLoadingState());
         List<Restaurant> nearbyRestaurants =
             await apiClient.fetchnearbyRestaurants(
                 term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
@@ -33,16 +33,10 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
           CategoriesRestaurants('Restaurants with delivery', delivery),
           CategoriesRestaurants('TakeAway Restaurants', takeaway),
         ];
-        List<String> restaurantNames = [
-          ...hotandnew.map((restaurant) => restaurant.title),
-          ...deals.map((restaurant) => restaurant.title),
-          ...delivery.map((restaurant) => restaurant.title),
-          ...takeaway.map((restaurant) => restaurant.title),
-        ];
-        emit(state.copyWith(
-            categories: categories, state: ListingStateEnum.loaded));
+
+        emit(ListingLoadedState(categories: categories));
       } catch (error) {
-        emit(state.copyWith(state: ListingStateEnum.error));
+        emit(ListingErrorState(errorMessage: 'errorMessage'));
       }
     });
   }
