@@ -7,10 +7,10 @@ import 'colors.dart';
 
 class BuildScroll extends StatelessWidget {
   String title;
-  final Function onpress;
+  final Function onPress;
   List<Restaurant> items;
 
-  BuildScroll(this.title, this.items, this.onpress);
+  BuildScroll(this.title, this.items, this.onPress);
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
@@ -29,14 +29,7 @@ class BuildScroll extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MyListingScreen(),
-                      ),
-                    );
-                  },
+                  onPressed: () => onPress(),
                   child: Text(
                     'See all',
                     style: TextStyle(fontSize: 20, color: AppColors.lightblue),

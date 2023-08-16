@@ -6,6 +6,7 @@ import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/models/restaurant_widget.dart';
+import 'package:restaurant_app/screens/listing_screen.dart';
 
 class MyHomeScreen extends StatelessWidget {
   @override
@@ -81,10 +82,37 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            BuildScroll('Most Popular', state.hotandnew, () {}),
+            BuildScroll('Most Popular', state.hotandnew, () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyListingScreen(
+                    type: "Most Popular",
+                  ),
+                ),
+              );
+            }),
             BuildScroll('Meal Deals', state.deals, () {}),
-            BuildScroll('Restaurants with delivery', state.delivery, () {}),
-            BuildScroll('TakeAway Restaurants', state.takeaway, () {}),
+            BuildScroll('Restaurants with delivery', state.delivery, () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyListingScreen(
+                    type: "Meals Deals",
+                  ),
+                ),
+              );
+            }),
+            BuildScroll('TakeAway Restaurants', state.takeaway, () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyListingScreen(
+                    type: "TakeAway Restaurants",
+                  ),
+                ),
+              );
+            }),
           ]);
         } else if (state.state == HomeState.error) {
           return Text('Facing errors trying to fetch data ');

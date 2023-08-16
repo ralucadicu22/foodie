@@ -1,34 +1,35 @@
 part of 'listing_bloc.dart';
 
-abstract class ListingState extends Equatable {
-  const ListingState();
+enum ListingScreenState { init, loading, loaded, error }
+
+class ListingState extends Equatable {
+  final String type;
+  final int page;
+  final List<Restaurant> result;
+  final bool hasReachedMax;
+  final ListingScreenState state;
 
   @override
-  List<Object> get props => [];
-}
-
-class ListingInitialState extends ListingState {}
-
-class ListingLoadingState extends ListingState {}
-
-class ListingLoadedState extends ListingState {
-  final List<CategoriesRestaurants> categories;
-
-  const ListingLoadedState({
-    required this.categories,
+  List<Object> get props => [page, result, hasReachedMax, state];
+  const ListingState({
+    required this.type,
+    this.page = 0,
+    this.result = const [],
+    this.hasReachedMax = false,
+    this.state = ListingScreenState.init,
   });
-
-  @override
-  List<Object> get props => [categories];
-}
-
-class ListingErrorState extends ListingState {
-  final String errorMessage;
-
-  const ListingErrorState({
-    required this.errorMessage,
-  });
-
-  @override
-  List<Object> get props => [errorMessage];
+  ListingState copyWith({
+    int? page,
+    List<Restaurant>? result,
+    bool? hasReachedMax,
+    ListingScreenState? state,
+  }) {
+    return ListingState(
+      type: type,
+      page: page ?? this.page,
+      result: result ?? this.result,
+      hasReachedMax: hasReachedMax ?? this.hasReachedMax,
+      state: state ?? this.state,
+    );
+  }
 }

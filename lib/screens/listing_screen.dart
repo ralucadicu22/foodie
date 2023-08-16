@@ -8,19 +8,48 @@ import 'package:restaurant_app/screens/home.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 
 class MyListingScreen extends StatelessWidget {
+  final String type;
+  const MyListingScreen({this.type = ''});
+  @override
   @override
   Widget build(BuildContext context) {
+    if (type.isEmpty) {
+      Navigator.pop(context);
+    }
     return BlocProvider(
-      create: (context) => ListingBloc()..add(LoadAllRestaurants()),
-      child: ListingScreen(),
+      create: (context) => ListingBloc(type: type)..add(LoadAllRestaurants()),
+      child: ListingScreen(
+        type: type,
+      ),
     );
   }
 }
 
-class ListingScreen extends StatelessWidget {
+class ListingScreen extends StatefulWidget {
+  final String type;
+  ListingScreen({
+    required this.type,
+  });
+  @override
+  State<ListingScreen> createState() => _ListingScreenState();
+}
+
+class _ListingScreenState extends State<ListingScreen> {
   final ScrollController _scrollController = ScrollController();
 
   @override
+  void initState() {
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels ==
+              _scrollController.position.maxScrollExtent &&
+          !context.read<ListingBloc>().state.hasReachedMax) {
+        context.read<ListingBloc>().add(LoadAllRestaurants());
+      }
+    });
+
+    super.initState();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
@@ -88,42 +117,23 @@ class ListingScreen extends StatelessWidget {
           ),
           BlocBuilder<ListingBloc, ListingState>(
             builder: (context, state) {
-              if (state is ListingLoadingState) {
+              if (state.state == ListingScreenState.loading &&
+                  state.page == 0) {
                 return SliverToBoxAdapter(
                   child: Center(
                     child: CircularProgressIndicator(),
                   ),
                 );
-              } else if (state is ListingLoadedState) {
+              } else if (state.state == ListingScreenState.loaded) {
                 return SliverList(
                   delegate: SliverChildBuilderDelegate(
                     (context, index) {
-                      final category = state.categories[index];
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              category.title,
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          Column(
-                            children: category.restaurants.map((restaurant) {
-                              return ListContainer(restaurant);
-                            }).toList(),
-                          ),
-                        ],
-                      );
+                      return ListContainer(state.result[index]);
                     },
-                    childCount: state.categories.length,
+                    childCount: state.result.length,
                   ),
                 );
-              } else if (state is ListingErrorState) {
+              } else if (state.state == ListingScreenState.error) {
                 return SliverToBoxAdapter(
                   child: Text('Error loading data'),
                 );
