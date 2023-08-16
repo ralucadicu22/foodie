@@ -18,22 +18,7 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
       try {
         emit(state.copyWith(state: ListingScreenState.loading));
         switch (state.type) {
-          case 'nearbyRestaurants':
-            List<Restaurant> nearbyRestaurants =
-                await apiClient.fetchnearbyRestaurants(
-                    term: 'restaurants',
-                    latitude: 34.0522,
-                    longitude: -118.2437,
-                    page: state.page);
-            if (nearbyRestaurants.length < YelpApiClient.limit) {
-              emit(state.copyWith(hasReachedMax: true));
-            }
-            emit(state.copyWith(
-                result: [...state.result, ...nearbyRestaurants],
-                page: state.page + 1));
-
-            break;
-          case 'hotandnew':
+          case 'Most Popular':
             List<Restaurant> hotandnew =
                 await apiClient.fetchHotAndNewRestaurants(
                     term: 'restaurants',
@@ -46,7 +31,7 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
                 result: [...state.result, ...hotandnew], page: state.page + 1));
 
             break;
-          case 'deals':
+          case 'Meal Deals':
             List<Restaurant> deals = await apiClient.fetchDeals(
                 term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
             if (deals.length < YelpApiClient.limit) {
@@ -56,7 +41,7 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
                 result: [...state.result, ...deals], page: state.page + 1));
             break;
 
-          case 'delivery':
+          case 'Restaurants with delivery':
             List<Restaurant> delivery = await apiClient.fetchDelivery(
                 term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
             if (delivery.length < YelpApiClient.limit) {
@@ -66,7 +51,7 @@ class ListingBloc extends Bloc<ListingEvent, ListingState> {
                 result: [...state.result, ...delivery], page: state.page + 1));
             break;
 
-          case 'takeaway':
+          case 'TakeAway Restaurants':
             List<Restaurant> takeaway = await apiClient.fetchTakeAway(
                 term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
             if (takeaway.length < YelpApiClient.limit) {

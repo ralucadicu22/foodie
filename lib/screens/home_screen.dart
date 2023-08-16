@@ -92,13 +92,22 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             }),
-            BuildScroll('Meal Deals', state.deals, () {}),
+            BuildScroll('Meal Deals', state.deals, () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyListingScreen(
+                    type: "Meal Deals",
+                  ),
+                ),
+              );
+            }),
             BuildScroll('Restaurants with delivery', state.delivery, () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => MyListingScreen(
-                    type: "Meals Deals",
+                    type: "Restaurants with delivery",
                   ),
                 ),
               );

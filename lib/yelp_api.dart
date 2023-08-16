@@ -6,7 +6,7 @@ import 'package:restaurant_app/models/restaurant_model.dart';
 
 class YelpApiClient {
   final String apiKey;
-  static int limit = 7;
+  static int limit = 10;
   YelpApiClient(this.apiKey);
 
   Future<List<Restaurant>> fetchnearbyRestaurants(

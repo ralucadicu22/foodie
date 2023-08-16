@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/listing/bloc/listing_bloc.dart';
@@ -52,7 +53,9 @@ class _ListingScreenState extends State<ListingScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
+        body: CupertinoScrollbar(
+      thickness: 8.0,
+      child: CustomScrollView(
         controller: _scrollController,
         slivers: [
           SliverToBoxAdapter(
@@ -87,7 +90,7 @@ class _ListingScreenState extends State<ListingScreen> {
                                 Icons.arrow_back,
                                 color: AppColors.white,
                               ),
-                              label: Text(''),
+                              label: Text('Home Screen'),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: AppColors.transparent,
                               ),
@@ -151,6 +154,6 @@ class _ListingScreenState extends State<ListingScreen> {
           ),
         ],
       ),
-    );
+    ));
   }
 }

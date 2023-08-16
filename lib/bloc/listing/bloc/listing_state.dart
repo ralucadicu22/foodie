@@ -10,7 +10,6 @@ class ListingState extends Equatable {
   final ListingScreenState state;
 
   @override
-  List<Object> get props => [page, result, hasReachedMax, state];
   const ListingState({
     required this.type,
     this.page = 0,
@@ -32,4 +31,6 @@ class ListingState extends Equatable {
       state: state ?? this.state,
     );
   }
+
+  List<Object> get props => [page, result, hasReachedMax, state];
 }
