@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:restaurant_app/screens/home.dart';
-import 'package:restaurant_app/screens/listing_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:restaurant_app/bloc/login/login_bloc.dart';
+import 'package:restaurant_app/screens/profile_screen.dart';
 
 import 'screens/splash_screen.dart';
 
@@ -12,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //
-      home: SplashScreen(),
+      home: BlocProvider(
+        create: (context) => LoginBloc(),
+        child: SplashScreen(),
+      ),
     );
   }
 }

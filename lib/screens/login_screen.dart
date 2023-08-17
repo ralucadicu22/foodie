@@ -10,10 +10,7 @@ import 'package:restaurant_app/screens/main_screen.dart';
 class MyLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => LoginBloc(),
-      child: LoginScreen(),
-    );
+    return LoginScreen();
   }
 }
 

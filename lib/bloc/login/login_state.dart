@@ -4,16 +4,31 @@ enum LoginScreenState { unauthenticated, loading, success, error }
 
 class LoginState extends Equatable {
   final LoginScreenState state;
-  final LoginScreenState error;
+
+  final String? profileImage;
+  final String? userName;
+  final String? userMailAddress;
   const LoginState({
     this.state = LoginScreenState.unauthenticated,
-    this.error = LoginScreenState.error,
+    this.profileImage,
+    this.userName,
+    this.userMailAddress,
   });
-  LoginState copyWith({LoginScreenState? state}) => LoginState(
+  LoginState copyWith({
+    LoginScreenState? state,
+    String? profileImage,
+    String? userName,
+    String? userAddress,
+    String? userMailAddress,
+  }) =>
+      LoginState(
         state: state ?? this.state,
-        error: error,
+        profileImage: profileImage,
+        userName: userName,
+        userMailAddress: userMailAddress,
       );
 
   @override
-  List<Object> get props => [state, error];
+  List<Object> get props =>
+      [state, profileImage ?? '', userName ?? '', userMailAddress ?? ''];
 }

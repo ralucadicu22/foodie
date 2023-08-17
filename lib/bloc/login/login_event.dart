@@ -10,3 +10,5 @@ class LoginEvent extends Equatable {
 class LogInwithGoogle extends LoginEvent {}
 
 class LoginwithFacebook extends LoginEvent {}
+
+class GetLoginData extends LoginEvent {}

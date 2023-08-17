@@ -17,6 +17,14 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     on<LoginwithFacebook>((event, emit) {
       _loginwithfacebook();
     });
+    on<GetLoginData>((event, emit) async {
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      preferences.getString('email');
+      preferences.getString(
+        'name',
+      );
+      preferences.getString('image');
+    });
   }
   GoogleSignIn _googleSignIn = GoogleSignIn(
     scopes: [
@@ -34,7 +42,14 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       if (user == null) {
         emit(state.copyWith(state: LoginScreenState.unauthenticated));
       } else {
-        emit(state.copyWith(state: LoginScreenState.success));
+        preferences.setString('email', user.email);
+        preferences.setString('name', user.displayName ?? '');
+        preferences.setString('image', user.photoUrl ?? '');
+        emit(state.copyWith(
+            state: LoginScreenState.success,
+            profileImage: user.photoUrl,
+            userName: user.displayName,
+            userMailAddress: user.email));
       }
     } catch (error) {
       emit(state.copyWith(state: LoginScreenState.error));
@@ -48,8 +63,14 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       preferences.setBool('isLoggedIn', true);
       final userCredential = await signInWithFacebook();
       print('Facebook User: ${userCredential.user?.displayName}');
-
-      emit(state.copyWith(state: LoginScreenState.success));
+      preferences.setString('email', userCredential.user?.email ?? '');
+      preferences.setString('name', userCredential.user?.displayName ?? '');
+      preferences.setString('image', userCredential.user?.photoURL ?? '');
+      emit(state.copyWith(
+          state: LoginScreenState.success,
+          profileImage: userCredential.user?.photoURL,
+          userName: userCredential.user?.displayName,
+          userMailAddress: userCredential.user?.email));
     } catch (error) {
       print('Facebook Login Error: $error');
       emit(state.copyWith(state: LoginScreenState.error));

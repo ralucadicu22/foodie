@@ -9,10 +9,7 @@ import 'package:restaurant_app/screens/home_screen.dart';
 class MyNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => NavbarBloc(),
-      child: CustomNavigationBar(),
-    );
+    return CustomNavigationBar();
   }
 }
 
@@ -25,7 +22,8 @@ class CustomNavigationBar extends StatelessWidget {
           currentIndex: state.state.index,
           onTap: (index) {
             final page = _navigate(index);
-            BlocProvider.of<NavbarBloc>(context).add(ChangePage(page));
+
+            context.read<NavbarBloc>().add(ChangePage(page));
           },
           items: [
             BottomNavigationBarItem(
