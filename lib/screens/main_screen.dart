@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/location/location_bloc.dart';
+import 'package:restaurant_app/bloc/nav_bar/bloc/navbar_bloc.dart';
 import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
 import 'package:restaurant_app/screens/home.dart';
@@ -11,8 +12,15 @@ import 'package:restaurant_app/screens/home_screen.dart';
 class MyMain extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => LocationBloc()..add(FetchLocation()),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<LocationBloc>(
+          create: (context) => LocationBloc()..add(FetchLocation()),
+        ),
+        BlocProvider<NavbarBloc>(
+          create: (context) => NavbarBloc(),
+        ),
+      ],
       child: MainScreen(),
     );
   }

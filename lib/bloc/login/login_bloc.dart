@@ -19,11 +19,22 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     });
     on<GetLoginData>((event, emit) async {
       SharedPreferences preferences = await SharedPreferences.getInstance();
-      preferences.getString('email');
-      preferences.getString(
-        'name',
+      String? email = preferences.getString(
+        'email',
       );
-      preferences.getString('image');
+      String? name = preferences.getString('name');
+      String? image = preferences.getString('image');
+      if (email != null && name != null && image != null) {
+        emit(state.copyWith(
+          userName: name,
+          userMailAddress: email,
+          profileImage: image,
+          state: LoginScreenState.success,
+        ));
+      }
+      print('Retrieved email: $email');
+      print('Retrieved name: $name');
+      print('Retrieved image: $image');
     });
   }
   GoogleSignIn _googleSignIn = GoogleSignIn(
@@ -36,20 +47,30 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   Future<void> _loginwithgoogle() async {
     emit(state.copyWith(state: LoginScreenState.loading));
     try {
-      SharedPreferences preferences = await SharedPreferences.getInstance();
-      preferences.setBool('isLoggedIn', true);
       final user = await _googleSignIn.signIn();
       if (user == null) {
         emit(state.copyWith(state: LoginScreenState.unauthenticated));
       } else {
-        preferences.setString('email', user.email);
-        preferences.setString('name', user.displayName ?? '');
-        preferences.setString('image', user.photoUrl ?? '');
+        SharedPreferences preferences = await SharedPreferences.getInstance();
+        preferences.setBool('isLoggedIn', true);
+
+        if (user.email != null) {
+          preferences.setString('email', user.email!);
+        }
+        if (user.displayName != null) {
+          preferences.setString('name', user.displayName!);
+        }
+        if (user.photoUrl != null) {
+          preferences.setString('image', user.photoUrl!);
+        }
+
         emit(state.copyWith(
-            state: LoginScreenState.success,
-            profileImage: user.photoUrl,
-            userName: user.displayName,
-            userMailAddress: user.email));
+          state: LoginScreenState.success,
+          profileImage: user.photoUrl,
+          userName: user.displayName,
+          userMailAddress: user.email,
+        ));
+        add(GetLoginData());
       }
     } catch (error) {
       emit(state.copyWith(state: LoginScreenState.error));
@@ -59,18 +80,28 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   Future<void> _loginwithfacebook() async {
     emit(state.copyWith(state: LoginScreenState.loading));
     try {
-      SharedPreferences preferences = await SharedPreferences.getInstance();
-      preferences.setBool('isLoggedIn', true);
       final userCredential = await signInWithFacebook();
       print('Facebook User: ${userCredential.user?.displayName}');
-      preferences.setString('email', userCredential.user?.email ?? '');
-      preferences.setString('name', userCredential.user?.displayName ?? '');
-      preferences.setString('image', userCredential.user?.photoURL ?? '');
+      SharedPreferences preferences = await SharedPreferences.getInstance();
+      preferences.setBool('isLoggedIn', true);
+
+      if (userCredential.user?.email != null) {
+        preferences.setString('email', userCredential.user!.email!);
+      }
+      if (userCredential.user?.displayName != null) {
+        preferences.setString('name', userCredential.user!.displayName!);
+      }
+      if (userCredential.user?.photoURL != null) {
+        preferences.setString('image', userCredential.user!.photoURL!);
+      }
+
       emit(state.copyWith(
-          state: LoginScreenState.success,
-          profileImage: userCredential.user?.photoURL,
-          userName: userCredential.user?.displayName,
-          userMailAddress: userCredential.user?.email));
+        state: LoginScreenState.success,
+        profileImage: userCredential.user?.photoURL,
+        userName: userCredential.user?.displayName,
+        userMailAddress: userCredential.user?.email,
+      ));
+      add(GetLoginData());
     } catch (error) {
       print('Facebook Login Error: $error');
       emit(state.copyWith(state: LoginScreenState.error));
