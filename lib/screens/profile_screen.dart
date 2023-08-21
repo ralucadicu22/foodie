@@ -1,19 +1,12 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/login/login_bloc.dart';
 import 'package:restaurant_app/bloc/logout/bloc/logout_bloc.dart';
 import 'package:restaurant_app/login_screen.dart';
+import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/models/colors.dart';
-
-// class MyProfile extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return BlocProvider(
-//       create: (context) => LogoutBloc()..add(LogOut()),
-//       child: ProfileScreen(),
-//     );
-//   }
-// }
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -42,18 +35,11 @@ class ProfileScreen extends StatelessWidget {
             height: 50,
           ),
           BlocBuilder<LoginBloc, LoginState>(builder: (context, state) {
-            print('Current state: ${state.state}');
-            print('ProfileScreen - Current state: ${state.state}');
-            print('ProfileScreen - userName: ${state.userName}');
-            print('ProfileScreen - userMailAddress: ${state.userMailAddress}');
-            print('ProfileScreen - profileImage: ${state.profileImage}');
-
             if (state.state == LoginScreenState.success) {
-              print('Current state: ${state.state}');
               return Column(
                 children: [
                   CircleAvatar(
-                    // backgroundImage: NetworkImage(),
+                    backgroundImage: AssetImage(AppAssets.user),
                     backgroundColor: AppColors.color1,
                     radius: 60.0,
                   ),
@@ -78,8 +64,9 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ],
               );
-            } else
+            } else {
               return Container();
+            }
           }),
           SizedBox(
             height: 80,
@@ -87,89 +74,111 @@ class ProfileScreen extends StatelessWidget {
           Column(
             children: [
               Padding(
-                  padding: EdgeInsets.only(right: 10, left: 10),
-                  child: Container(
+                padding: EdgeInsets.only(right: 10, left: 10),
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom: BorderSide(width: 1)),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Payment Method',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.keyboard_arrow_right),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 10, left: 10, top: 20),
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom: BorderSide(width: 1)),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Invite friends',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.keyboard_arrow_right),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 10, left: 10, top: 20),
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom: BorderSide(width: 1)),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Settings',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.keyboard_arrow_right),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 10, left: 10, top: 20),
+                child: BlocBuilder<LogoutBloc, LogoutState>(
+                  builder: (context, state) {
+                    return Container(
                       decoration: BoxDecoration(
-                          border: Border(bottom: BorderSide(width: 1))),
+                        border: Border(bottom: BorderSide(width: 1)),
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Payment Method',
+                            'Log out',
                             style: TextStyle(fontSize: 16),
                           ),
                           IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.keyboard_arrow_right))
-                        ],
-                      ))),
-              Padding(
-                  padding: EdgeInsets.only(right: 10, left: 10, top: 20),
-                  child: Container(
-                      decoration: BoxDecoration(
-                          border: Border(bottom: BorderSide(width: 1))),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Invite friends',
-                            style: TextStyle(fontSize: 16),
+                            onPressed: () {
+                              BlocProvider.of<LogoutBloc>(context)
+                                  .add(LogOut());
+                              if (state.state == LogoutScreenState.loading) {
+                                Center(
+                                  child: CircularProgressIndicator(),
+                                );
+                              } else if (state.state ==
+                                  LogoutScreenState.success) {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => MyLogin(),
+                                  ),
+                                );
+                              }
+                            },
+                            icon: Icon(Icons.keyboard_arrow_right),
                           ),
-                          IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.keyboard_arrow_right))
                         ],
-                      ))),
-              Padding(
-                  padding: EdgeInsets.only(right: 10, left: 10, top: 20),
-                  child: Container(
-                      decoration: BoxDecoration(
-                          border: Border(bottom: BorderSide(width: 1))),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Settings',
-                            style: TextStyle(fontSize: 16),
-                          ),
-                          IconButton(
-                              onPressed: () {},
-                              icon: Icon(Icons.keyboard_arrow_right))
-                        ],
-                      ))),
-              Padding(
-                  padding: EdgeInsets.only(right: 10, left: 10, top: 20),
-                  child: BlocBuilder<LogoutBloc, LogoutState>(
-                      builder: (context, state) {
-                    if (state.state == LogoutScreenState.success) {
-                      return Container(
-                          decoration: BoxDecoration(
-                              border: Border(bottom: BorderSide(width: 1))),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Log out',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                              IconButton(
-                                  onPressed: () {
-                                    // Navigator.pushReplacement(
-                                    //     context,
-                                    //     MaterialPageRoute(
-                                    //         builder: (context) => MyLogin()));
-                                    BlocProvider.of<LogoutBloc>(context)
-                                        .add(LogOut());
-                                  },
-                                  icon: Icon(Icons.keyboard_arrow_right))
-                            ],
-                          ));
-                    } else {
-                      return Container();
-                    }
-                  })),
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
-          )
+          ),
         ]),
       ),
     );

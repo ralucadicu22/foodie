@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -22,6 +23,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       String? email = preferences.getString(
         'email',
       );
+
       String? name = preferences.getString('name');
       String? image = preferences.getString('image');
       if (email != null && name != null && image != null) {
@@ -32,9 +34,6 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
           state: LoginScreenState.success,
         ));
       }
-      print('Retrieved email: $email');
-      print('Retrieved name: $name');
-      print('Retrieved image: $image');
     });
   }
   GoogleSignIn _googleSignIn = GoogleSignIn(
@@ -47,6 +46,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   Future<void> _loginwithgoogle() async {
     emit(state.copyWith(state: LoginScreenState.loading));
     try {
+      await _googleSignIn.signOut();
       final user = await _googleSignIn.signIn();
       if (user == null) {
         emit(state.copyWith(state: LoginScreenState.unauthenticated));
@@ -63,7 +63,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         if (user.photoUrl != null) {
           preferences.setString('image', user.photoUrl!);
         }
-
+        debugPrint(state.toString());
         emit(state.copyWith(
           state: LoginScreenState.success,
           profileImage: user.photoUrl,
@@ -73,6 +73,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         add(GetLoginData());
       }
     } catch (error) {
+      debugPrint(error.toString());
       emit(state.copyWith(state: LoginScreenState.error));
     }
   }
@@ -103,7 +104,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       ));
       add(GetLoginData());
     } catch (error) {
-      print('Facebook Login Error: $error');
+      debugPrint(error.toString());
       emit(state.copyWith(state: LoginScreenState.error));
     }
   }

@@ -7,4 +7,5 @@ class AppAssets {
   static String google = 'assets/logo_google.png';
   static String facebook = 'assets/logo_facebook.png';
   static String food = 'assets/food.jpg';
+  static String user = 'assets/female_user.png';
 }

@@ -77,7 +77,7 @@ class ListContainer extends StatelessWidget {
               ElevatedButton.icon(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.favorite,
+                    Icons.bookmark,
                     color: AppColors.lightblue,
                   ),
                   label: Text(''),

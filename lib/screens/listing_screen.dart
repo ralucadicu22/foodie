@@ -53,9 +53,7 @@ class _ListingScreenState extends State<ListingScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        body: CupertinoScrollbar(
-      thickness: 8.0,
-      child: CustomScrollView(
+      body: CustomScrollView(
         controller: _scrollController,
         slivers: [
           SliverToBoxAdapter(
@@ -154,6 +152,6 @@ class _ListingScreenState extends State<ListingScreen> {
           ),
         ],
       ),
-    ));
+    );
   }
 }
