@@ -9,6 +9,7 @@ import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/list_container.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
+import 'package:restaurant_app/screens/favorites_screen.dart';
 import 'package:restaurant_app/screens/home_screen.dart';
 import 'package:restaurant_app/screens/listing_screen.dart';
 import 'package:restaurant_app/screens/profile_screen.dart';
@@ -54,7 +55,11 @@ class Home extends StatelessWidget {
                           hint: 'Search',
                           suggestions: searchState.nearbyRestaurants
                               .map((e) => SearchFieldListItem(e.title,
-                                  child: Expanded(child: ListContainer(e))))
+                                  child: Expanded(
+                                      child: ListContainer(
+                                    e,
+                                    showImage: false,
+                                  ))))
                               .toList(),
                           searchInputDecoration: InputDecoration(
                             prefixIcon: Icon(Icons.search),
@@ -91,7 +96,7 @@ class Home extends StatelessWidget {
   final List<Widget> _pages = [
     MyHomeScreen(),
     LocationScreen(),
-    FavoriteScreen(),
+    FavoritesScreen(),
     ProfileScreen(),
   ];
 }
@@ -101,15 +106,6 @@ class LocationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue,
-    );
-  }
-}
-
-class FavoriteScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.pink,
     );
   }
 }

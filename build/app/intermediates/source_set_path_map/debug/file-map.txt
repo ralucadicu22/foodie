@@ -33,4 +33,5 @@ com.example.restaurant_app-packaged_res-31 C:\Users\raldicu\src\restaurant_app\b
 com.example.restaurant_app-packaged_res-32 C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\packaged_res\debug
 com.example.restaurant_app-packaged_res-33 C:\Users\raldicu\src\restaurant_app\build\google_sign_in_android\intermediates\packaged_res\debug
 com.example.restaurant_app-packaged_res-34 C:\Users\raldicu\src\restaurant_app\build\location\intermediates\packaged_res\debug
-com.example.restaurant_app-packaged_res-35 C:\Users\raldicu\src\restaurant_app\build\shared_preferences_android\intermediates\packaged_res\debug
+com.example.restaurant_app-packaged_res-35 C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\packaged_res\debug
+com.example.restaurant_app-packaged_res-36 C:\Users\raldicu\src\restaurant_app\build\shared_preferences_android\intermediates\packaged_res\debug

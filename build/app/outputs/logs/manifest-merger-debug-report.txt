@@ -61,6 +61,7 @@ MERGED from [:shared_preferences_android] C:\Users\raldicu\src\restaurant_app\bu
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [:google_sign_in_android] C:\Users\raldicu\src\restaurant_app\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:flutter_facebook_auth] C:\Users\raldicu\src\restaurant_app\build\flutter_facebook_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -178,6 +179,8 @@ MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:google_sign_in_android] C:\Users\raldicu\src\restaurant_app\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
