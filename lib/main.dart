@@ -6,6 +6,7 @@ import 'package:restaurant_app/bloc/login/login_bloc.dart';
 import 'package:restaurant_app/bloc/logout/bloc/logout_bloc.dart';
 import 'package:restaurant_app/models/internal_database.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
+import 'package:restaurant_app/screens/get_details_screen.dart';
 import 'package:restaurant_app/screens/profile_screen.dart';
 
 import 'screens/splash_screen.dart';

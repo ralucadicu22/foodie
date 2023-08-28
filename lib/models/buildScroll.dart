@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/models/categories.dart';
+import 'package:restaurant_app/models/get_details_models/restaurant_detailed.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/models/restaurant_widget.dart';
 import 'package:restaurant_app/screens/listing_screen.dart';

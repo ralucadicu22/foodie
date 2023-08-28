@@ -6,6 +6,7 @@ import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/models/navigation_bar.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/models/restaurant_widget.dart';
+import 'package:restaurant_app/screens/get_details_screen.dart';
 import 'package:restaurant_app/screens/listing_screen.dart';
 
 class MyHomeScreen extends StatelessWidget {
@@ -39,43 +40,51 @@ class HomeScreen extends StatelessWidget {
                   itemCount: state.nearbyRestaurants.length,
                   itemBuilder: (context, index) {
                     final restaurant = state.nearbyRestaurants[index];
-                    return Container(
-                      width: 300,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: NetworkImage(restaurant.image_url),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            padding: EdgeInsets.all(8),
-                            color: AppColors.black.withOpacity(0.2),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  restaurant.title,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: AppColors.white,
-                                  ),
-                                ),
-                                SizedBox(height: 2),
-                                Text(
-                                  restaurant.location.address1,
-                                  style: TextStyle(
-                                    color: AppColors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => GetDetails()));
+                      },
+                      child: Container(
+                        width: 300,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(restaurant.image_url),
+                            fit: BoxFit.cover,
                           ),
-                        ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(8),
+                              color: AppColors.black.withOpacity(0.2),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    restaurant.title,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: AppColors.white,
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Text(
+                                    restaurant.location.address1,
+                                    style: TextStyle(
+                                      color: AppColors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   },

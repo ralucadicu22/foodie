@@ -1,49 +1,58 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/models/colors.dart';
+import 'package:restaurant_app/models/get_details_models/restaurant_detailed.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
+import 'package:restaurant_app/screens/get_details_screen.dart';
 
 class RestaurantWidget extends StatelessWidget {
   final Restaurant model;
+
   RestaurantWidget(this.model);
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          height: 120,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-            image: NetworkImage(model.image_url),
-            fit: BoxFit.cover,
-          )),
-        ),
-        Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                color: AppColors.black.withOpacity(0.2),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      model.title,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.white,
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => MyDetails(id: model.id)));
+      },
+      child: Stack(
+        children: [
+          Container(
+            height: 120,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+              image: NetworkImage(model.image_url),
+              fit: BoxFit.cover,
+            )),
+          ),
+          Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  color: AppColors.black.withOpacity(0.2),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        model.title,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.white,
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 2),
-                    Text(
-                      model.location.address1,
-                      style: TextStyle(
-                        color: AppColors.white,
+                      SizedBox(height: 2),
+                      Text(
+                        model.location.address1,
+                        style: TextStyle(
+                          color: AppColors.white,
+                        ),
                       ),
-                    ),
-                  ],
-                )))
-      ],
+                    ],
+                  )))
+        ],
+      ),
     );
   }
 }
