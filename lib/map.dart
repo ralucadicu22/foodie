@@ -12,35 +12,44 @@ class RestaurantMap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final LatLng customLatLng = LatLng(lat, long);
+    final MapController mapController = MapController();
 
     return Container(
       width: double.infinity,
       height: 160,
       child: FlutterMap(
-          options: MapOptions(
-            center: customLatLng,
-            zoom: 5,
+        mapController: mapController,
+        options: MapOptions(
+          center: customLatLng,
+          zoom: 12,
+        ),
+        children: [
+          TileLayer(
+            urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            userAgentPackageName: 'com.example.app',
           ),
-          children: [
-            TileLayer(
-              urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-              userAgentPackageName: 'com.example.app',
-            ),
-            MarkerLayer(
-              markers: [
-                Marker(
-                    width: 30,
-                    height: 30,
-                    point: LatLng(37.7749, -122.4194),
-                    builder: (context) => Container(
-                          child: Icon(
-                            Icons.location_on,
-                            color: AppColors.pink,
-                          ),
-                        ))
-              ],
-            )
-          ]),
+          MarkerLayer(
+            markers: [
+              Marker(
+                width: 30,
+                height: 30,
+                point: customLatLng,
+                builder: (context) => GestureDetector(
+                  onTap: () {
+                    mapController.move(customLatLng, 18);
+                  },
+                  child: Container(
+                    child: Icon(
+                      Icons.location_on,
+                      color: AppColors.pink,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

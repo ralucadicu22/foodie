@@ -3,14 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
-    <application
-        android:name="${applicationName}"
-        android:label="restaurant_app"
-        android:icon="@mipmap/ic_launcher">
-
-        
-        <queries>
+ <queries>
             
             <intent>
                 <action android:name="android.intent.action.VIEW" />
@@ -31,6 +24,12 @@
                 <data android:scheme="https" />
             </intent>
         </queries>
+    <application
+        android:name="${applicationName}"
+        android:label="restaurant_app"
+        android:icon="@mipmap/ic_launcher">
+
+        
 
         <activity
             android:name=".MainActivity"

@@ -45,7 +45,9 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => GetDetails()));
+                                builder: (context) => MyDetails(
+                                      id: restaurant.id,
+                                    )));
                       },
                       child: Container(
                         width: 300,

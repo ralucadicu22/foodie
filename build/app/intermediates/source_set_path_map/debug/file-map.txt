@@ -35,3 +35,4 @@ com.example.restaurant_app-packaged_res-33 C:\Users\raldicu\src\restaurant_app\b
 com.example.restaurant_app-packaged_res-34 C:\Users\raldicu\src\restaurant_app\build\location\intermediates\packaged_res\debug
 com.example.restaurant_app-packaged_res-35 C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\packaged_res\debug
 com.example.restaurant_app-packaged_res-36 C:\Users\raldicu\src\restaurant_app\build\shared_preferences_android\intermediates\packaged_res\debug
+com.example.restaurant_app-packaged_res-37 C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\packaged_res\debug

@@ -24,7 +24,6 @@ class GetDetailsBloc extends Bloc<GetDetailsEvent, GetDetailsState> {
           id: id,
         );
         final List<Review> reviews = await apiClient.fetchRestaurantReviews(id);
-
         emit(state.copyWith(
           state: GetDetailsScreenState.loaded,
           restaurant: restaurant,
@@ -34,6 +33,17 @@ class GetDetailsBloc extends Bloc<GetDetailsEvent, GetDetailsState> {
         debugPrint(error.toString());
         emit(state.copyWith(state: GetDetailsScreenState.error));
       }
+    });
+    on<ReadMoreReviews>((event, emit) async {
+      final updatedReviews = state.reviews!.map((review) {
+        if (review == event.review) {
+          return review.copyWith(expanded: !review.expanded);
+        } else {
+          return review;
+        }
+      }).toList();
+
+      emit(state.copyWith(reviews: updatedReviews));
     });
   }
 }

@@ -12,3 +12,10 @@ class FetchDetails extends GetDetailsEvent {
   FetchDetails({required this.id});
   List<Object> get props => [id];
 }
+
+class ReadMoreReviews extends GetDetailsEvent {
+  final Review review;
+  ReadMoreReviews({required this.review});
+  @override
+  List<Object> get props => [review];
+}

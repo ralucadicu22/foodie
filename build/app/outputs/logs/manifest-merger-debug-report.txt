@@ -1,10 +1,12 @@
 -- Merging decision tree log ---
 application
-INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:7:5-40:19
+INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:27:5-63:19
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
+MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-14:19
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-18:19
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-18:19
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
@@ -21,6 +23,8 @@ MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.grad
 MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:21:5-42:19
 MERGED from [com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:18:5-48:19
 MERGED from [com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:18:5-48:19
+MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:16:5-17:19
+MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:16:5-17:19
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\df6916857e410d3a3e87a000f4a07feb\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\df6916857e410d3a3e87a000f4a07feb\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:22:5-38:19
@@ -39,8 +43,6 @@ MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\rald
 MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
-MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:16:5-17:19
-MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:16:5-17:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:11:5-20
@@ -52,15 +54,16 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.
 	android:name
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
-INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
-INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
-INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
-MERGED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
+INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
+INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
+INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
+MERGED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
 MERGED from [:shared_preferences_android] C:\Users\raldicu\src\restaurant_app\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [:google_sign_in_android] C:\Users\raldicu\src\restaurant_app\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -75,6 +78,8 @@ MERGED from [com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradl
 MERGED from [com.facebook.android:facebook-login:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\2a7e0f49a23bc1dbfae23a1c5287b137\transformed\jetified-facebook-login-16.0.1\AndroidManifest.xml:9:1-19:12
 MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:9:1-44:12
 MERGED from [com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:9:1-50:12
+MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:9:1-19:12
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\b5e87336976e2198294d871e5f6a3b6d\transformed\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\df6916857e410d3a3e87a000f4a07feb\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:17:1-40:12
@@ -105,24 +110,22 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\raldicu\.gradle\cach
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b974a4e320592a402e4cb303ffca5bb8\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\7d84f2b73e5aabf1e672b7cdacfa39a2\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:17:1-30:12
-MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:9:1-19:12
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\eaf67143eb0be53706322f3890a01b4f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\18850b3e05246b0964d8153397951dd4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\6e197249fdb800533e0b214411914282\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\020a42c8c0ba0cf1e0b2fb8a54c48010\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\01dc655125090d5f9cb63d1394ab7716\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\c0aa8f2ba666a3e9f441249338a5ffdd\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\18407006f83d271180cab2eac614a4f7\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\8fd9c6f1ec200f283712c56ffa67360e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\3ffed747386780ef444e24c8efbdb6f8\transformed\lifecycle-livedata-core-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\8b5052c368752bb5b9900a571c82764b\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\5cab86bcb2b9884d8ebe3bdbe047253f\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
 INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -135,11 +138,11 @@ INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\debug\AndroidM
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
+		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
+		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:1-64:12
 		INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -162,11 +165,31 @@ MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\inter
 	android:name
 		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:2-77
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:5-80
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:19-75
+		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:22-78
+queries
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:6:2-26:19
+MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:17:5-19:15
+MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:17:5-19:15
+intent#action:name:android.intent.action.VIEW+data:scheme:sms
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:8:13-11:22
+action#android.intent.action.VIEW
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+	android:name
+		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+data
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+	android:scheme
+		ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+intent#action:name:android.intent.action.VIEW+data:scheme:tel
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:13:13-16:21
+intent#action:name:android.intent.action.VIEW+data:scheme:http
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:18:13-21:22
+intent#action:name:android.intent.action.VIEW+data:scheme:https
+ADDED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:22:13-25:22
 uses-sdk
 INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml
@@ -179,6 +202,8 @@ MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -207,6 +232,10 @@ MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.grad
 MERGED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:13:5-15:41
 MERGED from [com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:12:5-14:41
 MERGED from [com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:12:5-14:41
+MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:12:5-14:41
+MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:12:5-14:41
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\b5e87336976e2198294d871e5f6a3b6d\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\b5e87336976e2198294d871e5f6a3b6d\transformed\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\df6916857e410d3a3e87a000f4a07feb\transformed\jetified-play-services-location-21.0.1\AndroidManifest.xml:5:5-44
@@ -267,12 +296,14 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ra
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\7d84f2b73e5aabf1e672b7cdacfa39a2\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:12:5-14:41
-MERGED from [com.facebook.android:facebook-bolts:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\ecb835d0757eeb875fbde6955a4cc59c\transformed\jetified-facebook-bolts-16.0.1\AndroidManifest.xml:12:5-14:41
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\dc8c4621862fdc0e8234699c212823bb\transformed\jetified-core-ktx-1.10.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\eaf67143eb0be53706322f3890a01b4f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\eaf67143eb0be53706322f3890a01b4f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\18850b3e05246b0964d8153397951dd4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\18850b3e05246b0964d8153397951dd4\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\6e197249fdb800533e0b214411914282\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
@@ -281,20 +312,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\raldicu\.gradle\caches\t
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\020a42c8c0ba0cf1e0b2fb8a54c48010\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\01dc655125090d5f9cb63d1394ab7716\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\01dc655125090d5f9cb63d1394ab7716\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\raldicu\.gradle\caches\transforms-3\6c2c81f732d2facfffa2b421dc5310d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\fb9f08a9939df4c538bc74a9f0195ba5\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\raldicu\.gradle\caches\transforms-3\1f875ed33161bde66539200b7724aa59\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\c0aa8f2ba666a3e9f441249338a5ffdd\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\c0aa8f2ba666a3e9f441249338a5ffdd\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\18407006f83d271180cab2eac614a4f7\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\18407006f83d271180cab2eac614a4f7\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\8fd9c6f1ec200f283712c56ffa67360e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
@@ -303,6 +322,12 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] C:\Users\raldicu\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\3ffed747386780ef444e24c8efbdb6f8\transformed\lifecycle-livedata-core-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\8b5052c368752bb5b9900a571c82764b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\8b5052c368752bb5b9900a571c82764b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\b23959baf4e6bacffe45954c3c73ae95\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\raldicu\.gradle\caches\transforms-3\e96b8100691dc7598d69c1f6d0aba9b2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\56ce3fc9a4e33f6c67581b3b9921758d\transformed\lifecycle-viewmodel-2.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\5cab86bcb2b9884d8ebe3bdbe047253f\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\raldicu\.gradle\caches\transforms-3\5cab86bcb2b9884d8ebe3bdbe047253f\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:5:5-7:41
@@ -345,6 +370,14 @@ ADDED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_c
 		ADDED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+	android:exported
+		ADDED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+	android:name
+		ADDED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
 service#com.lyokone.location.FlutterLocationService
 ADDED from [:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
 	android:enabled
@@ -387,10 +420,6 @@ ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\c
 		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:30:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
 ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:35:13-45:29
-action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:25-66
 category#android.intent.category.DEFAULT
 ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
 	android:name
@@ -399,14 +428,6 @@ category#android.intent.category.BROWSABLE
 ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents
@@ -439,8 +460,6 @@ ADDED from [com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle
 		ADDED from [com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
-queries
-ADDED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:17:5-19:15
 package#com.facebook.katana
 ADDED from [com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:18:9-55
 	android:name

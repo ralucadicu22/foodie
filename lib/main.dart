@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final restaurantBox = Hive.box<Restaurant>('restaurantBox');
+    final String id;
     return MultiBlocProvider(
         providers: [
           BlocProvider<LoginBloc>(

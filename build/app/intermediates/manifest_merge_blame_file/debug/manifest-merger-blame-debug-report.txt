@@ -19,339 +19,385 @@
 16-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:5-78
 16-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:4:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:2-77
-17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:19-75
-18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:5-79
-18-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:22-76
-19
-20    <queries>
-20-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:17:5-19:15
-21        <package android:name="com.facebook.katana" />
-21-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:18:9-55
-21-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:18:18-52
-22    </queries>
-23
-24    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-24-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:16:5-79
-24-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:16:22-76
-25
-26    <permission
-26-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-27        android:name="com.example.restaurant_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-29
-30    <uses-permission android:name="com.example.restaurant_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-30-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-31    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-31-->[com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
-31-->[com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:5-80
+17-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:5:22-78
+18
+19    <queries>
+19-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:6:2-26:19
+20        <intent>
+20-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:8:13-11:22
+21            <action android:name="android.intent.action.VIEW" />
+21-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+21-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+22
+23            <data android:scheme="sms" />
+23-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+23-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+24        </intent>
+25        <intent>
+25-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:13:13-16:21
+26            <action android:name="android.intent.action.VIEW" />
+26-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+26-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+27
+28            <data android:scheme="tel" />
+28-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+28-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+29        </intent>
+30        <intent>
+30-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:18:13-21:22
+31            <action android:name="android.intent.action.VIEW" />
+31-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+31-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
 32
-33    <application
-34        android:name="android.app.Application"
-35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-35-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-36        android:debuggable="true"
-37        android:icon="@mipmap/ic_launcher"
-38        android:label="restaurant_app"
-39        android:supportsRtl="true" >
-39-->[com.facebook.android:facebook-login:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\2a7e0f49a23bc1dbfae23a1c5287b137\transformed\jetified-facebook-login-16.0.1\AndroidManifest.xml:16:18-44
-40        <activity
-41            android:name="com.example.restaurant_app.MainActivity"
-42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-43            android:exported="true"
-44            android:hardwareAccelerated="true"
-45            android:launchMode="singleTop"
-46            android:theme="@style/LaunchTheme"
-47            android:windowSoftInputMode="adjustResize" >
-48            <intent-filter>
-49                <action android:name="android.intent.action.MAIN" />
+33            <data android:scheme="http" />
+33-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+33-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+34        </intent>
+35        <intent>
+35-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:22:13-25:22
+36            <action android:name="android.intent.action.VIEW" />
+36-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+36-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+37
+38            <data android:scheme="https" />
+38-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+38-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+39        </intent>
+40
+41        <package android:name="com.facebook.katana" />
+41-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:18:9-55
+41-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:18:18-52
+42    </queries>
+43
+44    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+44-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:5-79
+44-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:26:22-76
+45    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+45-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:16:5-79
+45-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:16:22-76
+46
+47    <permission
+47-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+48        android:name="com.example.restaurant_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 50
-51                <category android:name="android.intent.category.LAUNCHER" />
-52            </intent-filter>
-53        </activity>
-54
-55        <!-- Facebook SDK // START -->
-56
-57        <meta-data
-58            android:name="com.facebook.sdk.ApplicationId"
-59            android:value="@string/facebook_app_id" />
-60        <meta-data
-61            android:name="com.facebook.sdk.ClientToken"
-62            android:value="@string/facebook_client_token" />
-63
-64        <!-- Facebook SDK // END -->
-65
-66
-67        <!--
-68             Don't delete the meta-data below.
-69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-70        -->
-71        <meta-data
-72            android:name="flutterEmbedding"
-73            android:value="2" />
-74
-75        <service
-75-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
-77            android:directBootAware="true"
-77-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
-79            <meta-data
-79-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
-80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-80-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
-82            <meta-data
-82-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
-83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
-86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-86-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:70:17-109
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:71:17-82
-88        </service>
-89        <service
-89-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
-90            android:name="com.lyokone.location.FlutterLocationService"
-90-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
-91            android:enabled="true"
-91-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
-92            android:exported="false"
-92-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
-93            android:foregroundServiceType="location" />
-93-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
-94
-95        <uses-library
-95-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-96            android:name="androidx.window.extensions"
-96-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-97            android:required="false" />
-97-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-98        <uses-library
-98-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-99            android:name="androidx.window.sidecar"
-99-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
-100            android:required="false" />
-100-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-101
-102        <activity
-102-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:29:9-46:20
-103            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-103-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:30:13-80
-104            android:excludeFromRecents="true"
-104-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:31:13-46
-105            android:exported="true"
-105-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:32:13-36
-106            android:launchMode="singleTask"
-106-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:33:13-44
-107            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-107-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:34:13-72
-108            <intent-filter>
-108-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:35:13-45:29
-109                <action android:name="android.intent.action.VIEW" />
-109-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:17-69
-109-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:25-66
+51    <uses-permission android:name="com.example.restaurant_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+52    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+52-->[com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+52-->[com.android.installreferrer:installreferrer:1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f0b098212de32497e75de5febf3a9b32\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+53
+54    <application
+55        android:name="android.app.Application"
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.10.1] C:\Users\raldicu\.gradle\caches\transforms-3\da6f769dd2fe62bae500e425de7a6811\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+57        android:debuggable="true"
+58        android:icon="@mipmap/ic_launcher"
+59        android:label="restaurant_app"
+60        android:supportsRtl="true" >
+60-->[com.facebook.android:facebook-login:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\2a7e0f49a23bc1dbfae23a1c5287b137\transformed\jetified-facebook-login-16.0.1\AndroidManifest.xml:16:18-44
+61        <activity
+62            android:name="com.example.restaurant_app.MainActivity"
+63            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+64            android:exported="true"
+65            android:hardwareAccelerated="true"
+66            android:launchMode="singleTop"
+67            android:theme="@style/LaunchTheme"
+68            android:windowSoftInputMode="adjustResize" >
+69            <intent-filter>
+70                <action android:name="android.intent.action.MAIN" />
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+73            </intent-filter>
+74        </activity>
+75
+76        <!-- Facebook SDK // START -->
+77
+78        <meta-data
+79            android:name="com.facebook.sdk.ApplicationId"
+80            android:value="@string/facebook_app_id" />
+81        <meta-data
+82            android:name="com.facebook.sdk.ClientToken"
+83            android:value="@string/facebook_client_token" />
+84
+85        <!-- Facebook SDK // END -->
+86
+87
+88        <!--
+89             Don't delete the meta-data below.
+90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+91        -->
+92        <meta-data
+93            android:name="flutterEmbedding"
+94            android:value="2" />
+95
+96        <service
+96-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
+100            <meta-data
+100-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+101                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+101-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+103            <meta-data
+103-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+104-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:70:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:71:17-82
+109        </service>
 110
-111                <category android:name="android.intent.category.DEFAULT" />
-111-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
-111-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
-112                <category android:name="android.intent.category.BROWSABLE" />
-112-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
-112-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
-113
-114                <data
-114-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:41:17-44:51
-115                    android:host="firebase.auth"
-115-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:42:21-49
-116                    android:path="/"
-116-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:43:21-37
-117                    android:scheme="genericidp" />
-117-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:44:21-48
-118            </intent-filter>
-119        </activity>
-120        <activity
-120-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:47:9-64:20
-121            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-121-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:48:13-79
-122            android:excludeFromRecents="true"
-122-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:49:13-46
-123            android:exported="true"
-123-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:50:13-36
-124            android:launchMode="singleTask"
-124-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:51:13-44
-125            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-125-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:52:13-72
-126            <intent-filter>
-126-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:53:13-63:29
-127                <action android:name="android.intent.action.VIEW" />
-127-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:17-69
-127-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:25-66
+111        <activity
+111-->[:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+112            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+112-->[:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+113            android:exported="false"
+113-->[:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+114            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+114-->[:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+115
+116        <service
+116-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+117            android:name="com.lyokone.location.FlutterLocationService"
+117-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+118            android:enabled="true"
+118-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+119            android:exported="false"
+119-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+120            android:foregroundServiceType="location" />
+120-->[:location] C:\Users\raldicu\src\restaurant_app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+121
+122        <uses-library
+122-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+123            android:name="androidx.window.extensions"
+123-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+124            android:required="false" />
+124-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+125        <uses-library
+125-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+126            android:name="androidx.window.sidecar"
+126-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+127            android:required="false" />
+127-->[androidx.window:window:1.0.0-beta04] C:\Users\raldicu\.gradle\caches\transforms-3\aa63b1d9f3d50daa819346953e1a95a0\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 128
-129                <category android:name="android.intent.category.DEFAULT" />
-129-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
-129-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
-130                <category android:name="android.intent.category.BROWSABLE" />
-130-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
-130-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
-131
-132                <data
-132-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:41:17-44:51
-133                    android:host="firebase.auth"
-133-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:42:21-49
-134                    android:path="/"
-134-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:43:21-37
-135                    android:scheme="recaptcha" />
-135-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:44:21-48
-136            </intent-filter>
-137        </activity>
-138
-139        <provider
-139-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
-140            android:name="com.google.firebase.provider.FirebaseInitProvider"
-140-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
-141            android:authorities="com.example.restaurant_app.firebaseinitprovider"
-141-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
-142            android:directBootAware="true"
-142-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
-143            android:exported="false"
-143-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
-144            android:initOrder="100" />
-144-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
-145
-146        <activity
-146-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:22:9-25:66
-147            android:name="com.facebook.FacebookActivity"
-147-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:23:13-57
-148            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-148-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:24:13-96
-149            android:theme="@style/com_facebook_activity_theme" />
-149-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:25:13-63
-150        <activity android:name="com.facebook.CustomTabMainActivity" />
-150-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:26:9-71
-150-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:26:19-68
-151        <activity
-151-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:27:9-41:20
-152            android:name="com.facebook.CustomTabActivity"
-152-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:28:13-58
-153            android:exported="true" >
-153-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:29:13-36
-154            <intent-filter>
-154-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:31:13-40:29
-155                <action android:name="android.intent.action.VIEW" />
-155-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:17-69
-155-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:36:25-66
-156
-157                <category android:name="android.intent.category.DEFAULT" />
-157-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
-157-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
-158                <category android:name="android.intent.category.BROWSABLE" />
-158-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
-158-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
-159
-160                <data
-160-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:41:17-44:51
-161                    android:host="cct.com.example.restaurant_app"
-161-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:42:21-49
-162                    android:scheme="fbconnect" />
-162-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:44:21-48
+129        <activity
+129-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:29:9-46:20
+130            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+130-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:30:13-80
+131            android:excludeFromRecents="true"
+131-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:31:13-46
+132            android:exported="true"
+132-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:32:13-36
+133            android:launchMode="singleTask"
+133-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:33:13-44
+134            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+134-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:34:13-72
+135            <intent-filter>
+135-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:35:13-45:29
+136                <action android:name="android.intent.action.VIEW" />
+136-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+136-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+137
+138                <category android:name="android.intent.category.DEFAULT" />
+138-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
+138-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
+139                <category android:name="android.intent.category.BROWSABLE" />
+139-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
+139-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
+140
+141                <data
+141-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+142                    android:host="firebase.auth"
+143                    android:path="/"
+144                    android:scheme="genericidp" />
+144-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+145            </intent-filter>
+146        </activity>
+147        <activity
+147-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:47:9-64:20
+148            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+148-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:48:13-79
+149            android:excludeFromRecents="true"
+149-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:49:13-46
+150            android:exported="true"
+150-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:50:13-36
+151            android:launchMode="singleTask"
+151-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:51:13-44
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+152-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:52:13-72
+153            <intent-filter>
+153-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:53:13-63:29
+154                <action android:name="android.intent.action.VIEW" />
+154-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+154-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
+156-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
+157                <category android:name="android.intent.category.BROWSABLE" />
+157-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
+157-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
+158
+159                <data
+159-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+160                    android:host="firebase.auth"
+161                    android:path="/"
+162                    android:scheme="recaptcha" />
+162-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
 163            </intent-filter>
 164        </activity>
-165        <!--
-166         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-167         with the application context. This config is merged in with the host app's manifest,
-168         but there can only be one provider with the same authority activated at any given
-169         point; so if the end user has two or more different apps that use Facebook SDK, only the
-170         first one will be able to use the provider. To work around this problem, we use the
-171         following placeholder in the authority to identify each host application as if it was
-172         a completely different provider.
-173        -->
-174        <provider
-174-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:29:9-32:40
-175            android:name="com.facebook.internal.FacebookInitProvider"
-175-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:30:13-70
-176            android:authorities="com.example.restaurant_app.FacebookInitProvider"
-176-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:31:13-72
-177            android:exported="false" />
-177-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:32:13-37
-178
-179        <receiver
-179-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:34:9-40:20
-180            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-180-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:35:13-86
-181            android:exported="false" >
-181-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:36:13-37
-182            <intent-filter>
-182-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:37:13-39:29
-183                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-183-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:38:17-95
-183-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:38:25-92
-184            </intent-filter>
-185        </receiver>
-186        <receiver
-186-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:41:9-47:20
-187            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
-187-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:42:13-118
-188            android:exported="false" >
-188-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:43:13-37
-189            <intent-filter>
-189-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:44:13-46:29
-190                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
-190-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:45:17-103
-190-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:45:25-100
-191            </intent-filter>
-192        </receiver>
-193
-194        <activity
-194-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:23:9-27:75
-195            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-195-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:24:13-93
-196            android:excludeFromRecents="true"
-196-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:25:13-46
-197            android:exported="false"
-197-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:26:13-37
-198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-198-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:27:13-72
-199        <!--
-200            Service handling Google Sign-In user revocation. For apps that do not integrate with
-201            Google Sign-In, this service will never be started.
-202        -->
-203        <service
-203-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:33:9-37:51
-204            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-204-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:34:13-89
-205            android:exported="true"
-205-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:35:13-36
-206            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-206-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:36:13-107
-207            android:visibleToInstantApps="true" />
-207-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:37:13-48
-208
-209        <activity
-209-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-210            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-210-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-211            android:exported="false"
-211-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-212            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-212-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-213
-214        <meta-data
-214-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
-215            android:name="com.google.android.gms.version"
-215-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
-216            android:value="@integer/google_play_services_version" />
-216-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
-217    </application>
-218
-219</manifest>
+165
+166        <provider
+166-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+167            android:name="com.google.firebase.provider.FirebaseInitProvider"
+167-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+168            android:authorities="com.example.restaurant_app.firebaseinitprovider"
+168-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+169            android:directBootAware="true"
+169-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+170            android:exported="false"
+170-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+171            android:initOrder="100" />
+171-->[com.google.firebase:firebase-common:20.3.3] C:\Users\raldicu\.gradle\caches\transforms-3\c30eb8fa2963e5180488bd47bd168911\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+172
+173        <activity
+173-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:22:9-25:66
+174            android:name="com.facebook.FacebookActivity"
+174-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:23:13-57
+175            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+175-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:24:13-96
+176            android:theme="@style/com_facebook_activity_theme" />
+176-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:25:13-63
+177        <activity android:name="com.facebook.CustomTabMainActivity" />
+177-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:26:9-71
+177-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:26:19-68
+178        <activity
+178-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:27:9-41:20
+179            android:name="com.facebook.CustomTabActivity"
+179-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:28:13-58
+180            android:exported="true" >
+180-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:29:13-36
+181            <intent-filter>
+181-->[com.facebook.android:facebook-common:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\dd4ba7a5ed482590f73f0fbe18c57717\transformed\jetified-facebook-common-16.0.1\AndroidManifest.xml:31:13-40:29
+182                <action android:name="android.intent.action.VIEW" />
+182-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:17-69
+182-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:9:25-66
+183
+184                <category android:name="android.intent.category.DEFAULT" />
+184-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
+184-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
+185                <category android:name="android.intent.category.BROWSABLE" />
+185-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
+185-->[com.google.firebase:firebase-auth:22.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\2613a79247ee16658233d93a42360f17\transformed\jetified-firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
+186
+187                <data
+187-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:17-46
+188                    android:host="cct.com.example.restaurant_app"
+189                    android:scheme="fbconnect" />
+189-->C:\Users\raldicu\src\restaurant_app\android\app\src\main\AndroidManifest.xml:10:23-43
+190            </intent-filter>
+191        </activity>
+192        <!--
+193         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+194         with the application context. This config is merged in with the host app's manifest,
+195         but there can only be one provider with the same authority activated at any given
+196         point; so if the end user has two or more different apps that use Facebook SDK, only the
+197         first one will be able to use the provider. To work around this problem, we use the
+198         following placeholder in the authority to identify each host application as if it was
+199         a completely different provider.
+200        -->
+201        <provider
+201-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:29:9-32:40
+202            android:name="com.facebook.internal.FacebookInitProvider"
+202-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:30:13-70
+203            android:authorities="com.example.restaurant_app.FacebookInitProvider"
+203-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:31:13-72
+204            android:exported="false" />
+204-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:32:13-37
+205
+206        <receiver
+206-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:34:9-40:20
+207            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+207-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:35:13-86
+208            android:exported="false" >
+208-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:36:13-37
+209            <intent-filter>
+209-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:37:13-39:29
+210                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+210-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:38:17-95
+210-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:38:25-92
+211            </intent-filter>
+212        </receiver>
+213        <receiver
+213-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:41:9-47:20
+214            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+214-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:42:13-118
+215            android:exported="false" >
+215-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:43:13-37
+216            <intent-filter>
+216-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:44:13-46:29
+217                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+217-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:45:17-103
+217-->[com.facebook.android:facebook-core:16.0.1] C:\Users\raldicu\.gradle\caches\transforms-3\a5b96bf9800e737813e378ffecc9dd7e\transformed\jetified-facebook-core-16.0.1\AndroidManifest.xml:45:25-100
+218            </intent-filter>
+219        </receiver>
+220
+221        <activity
+221-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:23:9-27:75
+222            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+222-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:24:13-93
+223            android:excludeFromRecents="true"
+223-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:25:13-46
+224            android:exported="false"
+224-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:26:13-37
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+225-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:27:13-72
+226        <!--
+227            Service handling Google Sign-In user revocation. For apps that do not integrate with
+228            Google Sign-In, this service will never be started.
+229        -->
+230        <service
+230-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:33:9-37:51
+231            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+231-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:34:13-89
+232            android:exported="true"
+232-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:35:13-36
+233            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+233-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:36:13-107
+234            android:visibleToInstantApps="true" />
+234-->[com.google.android.gms:play-services-auth:20.6.0] C:\Users\raldicu\.gradle\caches\transforms-3\666a73c85d210690e45ed29e5245eb79\transformed\jetified-play-services-auth-20.6.0\AndroidManifest.xml:37:13-48
+235
+236        <activity
+236-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+237            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+237-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+239-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\raldicu\.gradle\caches\transforms-3\f3f78e0ac3c0e825cf11e86241325083\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+240
+241        <meta-data
+241-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+242            android:name="com.google.android.gms.version"
+242-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+243            android:value="@integer/google_play_services_version" />
+243-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\raldicu\.gradle\caches\transforms-3\ffd6d8d2051f90a5c7ddd9b2475a9ed4\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+244    </application>
+245
+246</manifest>
