@@ -6,7 +6,7 @@ part 'restaurant_model.g.dart';
 @HiveType(typeId: 0)
 class RestaurantHive extends HiveObject {
   @HiveField(0)
-  final LocationData location;
+  final LocationDataModel location;
 
   @HiveField(1)
   final String image_url;
@@ -38,7 +38,7 @@ class RestaurantHive extends HiveObject {
 }
 
 class Restaurant {
-  final LocationData location;
+  final LocationDataModel location;
   final String id;
   final String image_url;
   final String title;
@@ -58,7 +58,7 @@ class Restaurant {
 
   static Restaurant fromJson(Map<String, dynamic> json) {
     return Restaurant(
-      location: LocationData.fromJson(json['location']),
+      location: LocationDataModel.fromJson(json['location']),
       image_url: json['image_url'] ?? '',
       title: json['name'] ?? '',
       display_phone: json['display_phone'] ?? '',

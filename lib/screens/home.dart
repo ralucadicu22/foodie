@@ -12,6 +12,7 @@ import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/screens/favorites_screen.dart';
 import 'package:restaurant_app/screens/home_screen.dart';
 import 'package:restaurant_app/screens/listing_screen.dart';
+import 'package:restaurant_app/screens/location_screen.dart';
 import 'package:restaurant_app/screens/profile_screen.dart';
 import 'package:searchfield/searchfield.dart';
 
@@ -99,13 +100,4 @@ class Home extends StatelessWidget {
     FavoritesScreen(),
     ProfileScreen(),
   ];
-}
-
-class LocationScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blue,
-    );
-  }
 }

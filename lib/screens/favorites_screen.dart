@@ -37,7 +37,7 @@ class FavoritesScreen extends StatelessWidget {
               );
             }
           } else {
-            return Text('error');
+            return Container();
           }
         },
       ),

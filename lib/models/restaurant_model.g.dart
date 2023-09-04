@@ -17,7 +17,7 @@ class RestaurantHiveAdapter extends TypeAdapter<RestaurantHive> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return RestaurantHive(
-      location: fields[0] as LocationData,
+      location: fields[0] as LocationDataModel,
       id: fields[6] as String,
       image_url: fields[1] as String,
       title: fields[2] as String,

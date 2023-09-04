@@ -25,10 +25,9 @@ class RestaurantDetailedApiClient {
             .replace(queryParameters: queryParameters);
     debugPrint('${AppConfig().url_base}${AppConfig().pathDetails}$id');
     final response = await http.get(uri, headers: headers);
-    debugPrint(response.statusCode.toString());
+
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      debugPrint(data.toString());
 
       return RestaurantDetailed.fromJson(data);
     } else {
@@ -57,7 +56,7 @@ class ReviewApiClient {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      debugPrint(response.body);
+
       return (data['reviews'] as List).map((e) => Review.fromJson(e)).toList();
     } else {
       throw Exception('Failed to load restaurant reviews');

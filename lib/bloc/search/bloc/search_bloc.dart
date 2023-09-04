@@ -1,24 +1,48 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
+import 'package:location/location.dart';
+import 'package:restaurant_app/models/app_config.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/yelp_api.dart';
 
 part 'search_event.dart';
 part 'search_state.dart';
 
-final YelpApiClient apiClient = YelpApiClient(
-    'jbH2y2WehwaV_WrooLAhyj-PrIjAUg7IhpH2ISpfjo0DGh82HV_8FcOxsgGMfHb9OMAphxC6g172YtgqF5RxIF_tjjsmbnlQWceuAJkGR2SRWmQGNO9fl9HnnCrKZHYx');
+final YelpApiClient apiClient = YelpApiClient(AppConfig().api_key);
 
 class SearchBloc extends Bloc<SearchEvent, SearchState> {
   SearchBloc() : super(SearchState()) {
     on<SearchEvent>((event, emit) {});
     on<SearchText>((event, emit) async {
+      emit(state.copyWith(state: SearchStateEnum.loading));
+      Location location = Location();
+      bool _serviceEnabled;
+      PermissionStatus _permissionGranted;
+
       try {
-        emit(state.copyWith(state: SearchStateEnum.loading));
+        _serviceEnabled = await location.serviceEnabled();
+        if (!_serviceEnabled) {
+          _serviceEnabled = await location.requestService();
+          if (!_serviceEnabled) {
+            emit(state.copyWith(state: SearchStateEnum.error));
+            return;
+          }
+        }
+
+        _permissionGranted = await location.hasPermission();
+        if (_permissionGranted == PermissionStatus.denied) {
+          _permissionGranted = await location.requestPermission();
+          if (_permissionGranted != PermissionStatus.granted) {
+            emit(state.copyWith(state: SearchStateEnum.error));
+            return;
+          }
+        }
+
+        LocationData locationData = await location.getLocation();
         List<Restaurant> nearbyRestaurants =
             await apiClient.fetchnearbyRestaurants(
-                term: 'restaurants', latitude: 34.0522, longitude: -118.2437);
+                term: 'restaurants', locationData: locationData);
         List<Restaurant> filtredrestaurants = nearbyRestaurants
             .where((restaurant) => restaurant.title
                 .toLowerCase()
@@ -28,7 +52,6 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
             state: SearchStateEnum.loaded,
             nearbyRestaurants: filtredrestaurants));
       } catch (error) {
-        debugPrint(error.toString());
         emit(state.copyWith(state: SearchStateEnum.error));
       }
     });

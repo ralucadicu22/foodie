@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
 
 class User {
-  final String id;
-  final String image_url;
-  final String name;
-  User({required this.id, required this.image_url, required this.name});
+  final String idUser;
+  final String imageUrlUser;
+  final String nameUser;
+  User(
+      {required this.idUser,
+      required this.imageUrlUser,
+      required this.nameUser});
   static User fromJson(Map<String, dynamic> json) {
     return User(
-        id: json['id'] ?? '',
-        image_url: json['image_url'] ?? '',
-        name: json['name'] ?? '');
+        idUser: json['id'] ?? '',
+        imageUrlUser: json['image_url'] ?? '',
+        nameUser: json['name'] ?? '');
   }
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'image_url': image_url,
-        'name': name,
+        'id': idUser,
+        'image_url': imageUrlUser,
+        'name': nameUser,
       };
 }

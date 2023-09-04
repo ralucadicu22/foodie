@@ -16,7 +16,7 @@ class RestaurantMap extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      height: 160,
+      height: double.infinity,
       child: FlutterMap(
         mapController: mapController,
         options: MapOptions(
@@ -52,4 +52,6 @@ class RestaurantMap extends StatelessWidget {
       ),
     );
   }
+
+  static fromJson(e) {}
 }

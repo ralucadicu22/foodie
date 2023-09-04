@@ -17,7 +17,7 @@ class RestaurantAdapter extends TypeAdapter<Restaurant> {
   Restaurant read(BinaryReader reader) {
     final map = reader.readMap();
     return Restaurant(
-      location: map['location'] as LocationData,
+      location: map['location'] as LocationDataModel,
       id: map['id'] as String,
       image_url: map['image_url'] as String,
       title: map['title'] as String,
@@ -41,18 +41,18 @@ class RestaurantAdapter extends TypeAdapter<Restaurant> {
   }
 }
 
-class LocationDataAdapter extends TypeAdapter<LocationData> {
+class LocationDataAdapter extends TypeAdapter<LocationDataModel> {
   @override
   final typeId = 1;
 
   @override
-  LocationData read(BinaryReader reader) {
+  LocationDataModel read(BinaryReader reader) {
     final address1 = reader.readString();
-    return LocationData(address1: address1);
+    return LocationDataModel(address1: address1);
   }
 
   @override
-  void write(BinaryWriter writer, LocationData locationData) {
+  void write(BinaryWriter writer, LocationDataModel locationData) {
     writer.writeString(locationData.address1);
   }
 }

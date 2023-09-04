@@ -2,46 +2,46 @@ import 'package:flutter/material.dart';
 import 'package:restaurant_app/models/get_details_models/user.dart';
 
 class Review {
-  final String id;
-  final String text;
-  final int rating;
-  final User user;
-  final String time_created;
+  final String idReview;
+  final String textReview;
+  final int ratingReview;
+  final User userReview;
+  final String timeCreatedReview;
   bool expanded;
   Review({
-    required this.id,
-    required this.text,
-    required this.rating,
-    required this.user,
-    required this.time_created,
+    required this.idReview,
+    required this.textReview,
+    required this.ratingReview,
+    required this.userReview,
+    required this.timeCreatedReview,
     this.expanded = false,
   });
 
   Review copyWith({bool? expanded}) {
     return Review(
-      id: this.id,
-      text: this.text,
-      rating: this.rating,
-      user: this.user,
-      time_created: this.time_created,
+      idReview: this.idReview,
+      textReview: this.textReview,
+      ratingReview: this.ratingReview,
+      userReview: this.userReview,
+      timeCreatedReview: this.timeCreatedReview,
       expanded: expanded ?? this.expanded,
     );
   }
 
   static Review fromJson(Map<String, dynamic> json) {
     return Review(
-        id: json['id'] ?? '',
-        text: json['text'] ?? '',
-        rating: (json['rating']) ?? 0,
-        user: User.fromJson(json['user']),
-        time_created: json['time_created'] ?? '');
+        idReview: json['id'] ?? '',
+        textReview: json['text'] ?? '',
+        ratingReview: (json['rating']) ?? 0,
+        userReview: User.fromJson(json['user']),
+        timeCreatedReview: json['time_created'] ?? '');
   }
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'text': text,
-        'rating': rating,
-        'user': user,
-        'time_created': time_created
+        'id': idReview,
+        'text': textReview,
+        'rating': ratingReview,
+        'user': userReview,
+        'time_created': timeCreatedReview
       };
 }
