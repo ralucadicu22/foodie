@@ -1168,13 +1168,20 @@ int string common_open_on_phone 0x7f0e0048
 int string common_signin_button_text 0x7f0e0049
 int string common_signin_button_text_long 0x7f0e004a
 int string copy_toast_msg 0x7f0e004b
-int string facebook_app_id 0x7f0e004c
-int string facebook_client_token 0x7f0e004d
-int string fallback_menu_item_copy_link 0x7f0e004e
-int string fallback_menu_item_open_in_browser 0x7f0e004f
-int string fallback_menu_item_share_link 0x7f0e0050
-int string search_menu_title 0x7f0e0051
-int string status_bar_notification_info_overflow 0x7f0e0052
+int string default_web_client_id 0x7f0e004c
+int string facebook_app_id 0x7f0e004d
+int string facebook_client_token 0x7f0e004e
+int string fallback_menu_item_copy_link 0x7f0e004f
+int string fallback_menu_item_open_in_browser 0x7f0e0050
+int string fallback_menu_item_share_link 0x7f0e0051
+int string gcm_defaultSenderId 0x7f0e0052
+int string google_api_key 0x7f0e0053
+int string google_app_id 0x7f0e0054
+int string google_crash_reporting_api_key 0x7f0e0055
+int string google_storage_bucket 0x7f0e0056
+int string project_id 0x7f0e0057
+int string search_menu_title 0x7f0e0058
+int string status_bar_notification_info_overflow 0x7f0e0059
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style Animation_AppCompat_Dialog 0x7f0f0002
@@ -2096,4 +2103,5 @@ int styleable com_facebook_login_view_com_facebook_tooltip_mode 5
 int[] styleable com_facebook_profile_picture_view { 0x7f030068, 0x7f03006f }
 int styleable com_facebook_profile_picture_view_com_facebook_is_cropped 0
 int styleable com_facebook_profile_picture_view_com_facebook_preset_size 1
-int xml image_share_filepaths 0x7f110000
+int xml flutter_share_file_paths 0x7f110000
+int xml image_share_filepaths 0x7f110001

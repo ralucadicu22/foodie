@@ -406,11 +406,18 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
+    <string name="default_web_client_id" translatable="false">667685998636-u2nfu07dtujak59r20k8254uduj6sid8.apps.googleusercontent.com</string>
     <string name="facebook_app_id">1001898370951570</string>
     <string name="facebook_client_token">01f92c472e3d4cc941d25ad28e0a251f</string>
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="gcm_defaultSenderId" translatable="false">667685998636</string>
+    <string name="google_api_key" translatable="false">AIzaSyDySpqAQziAP9w1eF0f5CAMZsj7mv8zjPs</string>
+    <string name="google_app_id" translatable="false">1:667685998636:android:4822be305fb4baba4b0189</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDySpqAQziAP9w1eF0f5CAMZsj7mv8zjPs</string>
+    <string name="google_storage_bucket" translatable="false">restaurantapp-393807.appspot.com</string>
+    <string name="project_id" translatable="false">restaurantapp-393807</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

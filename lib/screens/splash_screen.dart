@@ -35,7 +35,7 @@ class SplashScreen extends StatelessWidget {
                 if (state.redirect == PageRedirect.login) {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => MyLogin()),
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
                   );
                 }
               }

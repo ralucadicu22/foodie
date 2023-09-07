@@ -21,9 +21,10 @@ class LogoutBloc extends Bloc<LogoutEvent, LogoutState> {
         preferences.remove('email');
         preferences.remove('name');
         preferences.remove('image');
-        preferences.setBool('isLoggedIn', false);
+
         await _googleSignIn.signOut();
         await FacebookAuth.instance.logOut();
+        preferences.setBool('isLoggedIn', false);
         emit(state.copyWith(state: LogoutScreenState.success));
       } catch (error) {
         debugPrint(error.toString());

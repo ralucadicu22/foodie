@@ -41,9 +41,11 @@ class ReviewsSection extends StatelessWidget {
                       CircleAvatar(
                         backgroundColor: AppColors.white,
                         radius: 30,
-                        backgroundImage: NetworkImage(
-                          review.userReview.imageUrlUser,
-                        ),
+                        backgroundImage:
+                            review.userReview.imageUrlUser != null &&
+                                    review.userReview.imageUrlUser.isNotEmpty
+                                ? NetworkImage(review.userReview.imageUrlUser)
+                                : null,
                       ),
                       VerticalDivider(width: 15),
                       Column(

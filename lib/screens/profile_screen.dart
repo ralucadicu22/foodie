@@ -2,11 +2,13 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:restaurant_app/bloc/dark_theme/bloc/dark_theme_bloc.dart';
 import 'package:restaurant_app/bloc/login/login_bloc.dart';
 import 'package:restaurant_app/bloc/logout/bloc/logout_bloc.dart';
-import 'package:restaurant_app/login_screen.dart';
+
 import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/models/colors.dart';
+import 'package:restaurant_app/screens/login_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -16,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.only(top: 50.0),
-        child: Column(children: [
+        child: ListView(children: [
           Padding(
             padding: EdgeInsets.only(left: 15.0, right: 15.0),
             child: Row(
@@ -39,7 +41,7 @@ class ProfileScreen extends StatelessWidget {
               return Column(
                 children: [
                   CircleAvatar(
-                    backgroundImage: AssetImage(AppAssets.user),
+                    backgroundImage: NetworkImage(state.profileImage ?? ''),
                     backgroundColor: AppColors.color1,
                     radius: 60.0,
                   ),
@@ -138,43 +140,74 @@ class ProfileScreen extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(right: 10, left: 10, top: 20),
-                child: BlocBuilder<LogoutBloc, LogoutState>(
-                  builder: (context, state) {
-                    return Container(
-                      decoration: BoxDecoration(
-                        border: Border(bottom: BorderSide(width: 1)),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: BlocListener<LogoutBloc, LogoutState>(
+                  listener: (context, state) {
+                    if (state.state == LogoutScreenState.loading) {
+                      Center(
+                        child: CircularProgressIndicator(),
+                      );
+                    } else if (state.state == LogoutScreenState.success) {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                      );
+                    }
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border(bottom: BorderSide(width: 1)),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Log out',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            BlocProvider.of<LogoutBloc>(context).add(LogOut());
+                          },
+                          icon: Icon(Icons.keyboard_arrow_right),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: BlocBuilder<DarkThemeBloc, DarkThemeState>(
+                    builder: (context, themeState) {
+                      return Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text(
-                            'Log out',
-                            style: TextStyle(fontSize: 16),
+                          Icon(
+                            Icons.wb_sunny,
+                            color: themeState.isDarkMode
+                                ? AppColors.grey
+                                : AppColors.color1,
                           ),
-                          IconButton(
-                            onPressed: () {
-                              BlocProvider.of<LogoutBloc>(context)
-                                  .add(LogOut());
-                              if (state.state == LogoutScreenState.loading) {
-                                Center(
-                                  child: CircularProgressIndicator(),
-                                );
-                              } else if (state.state ==
-                                  LogoutScreenState.success) {
-                                Navigator.pushReplacement(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => MyLogin(),
-                                  ),
-                                );
-                              }
+                          Switch(
+                            value: themeState.isDarkMode,
+                            onChanged: (_) {
+                              context
+                                  .read<DarkThemeBloc>()
+                                  .add(ToggleDarkTheme());
                             },
-                            icon: Icon(Icons.keyboard_arrow_right),
+                          ),
+                          Icon(
+                            Icons.nightlight_round,
+                            color: themeState.isDarkMode
+                                ? AppColors.lightblue
+                                : AppColors.grey,
                           ),
                         ],
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
               ),
             ],

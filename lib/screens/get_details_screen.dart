@@ -6,19 +6,14 @@ import 'package:restaurant_app/bloc/favorites/bloc/favorites_bloc.dart';
 import 'package:restaurant_app/bloc/get_details/bloc/get_details_bloc.dart';
 import 'package:restaurant_app/map.dart';
 import 'package:restaurant_app/models/colors.dart';
+import 'package:restaurant_app/models/dynamic_link.dart';
 import 'package:restaurant_app/models/get_details_models/contact_infos.dart';
-import 'package:restaurant_app/models/get_details_models/hours.dart';
-import 'package:restaurant_app/models/get_details_models/restaurant_detailed.dart';
 import 'package:restaurant_app/models/get_details_models/restaurant_infos.dart';
-import 'package:restaurant_app/models/get_details_models/reviews.dart';
 import 'package:restaurant_app/models/get_details_models/reviews_section.dart';
-import 'package:restaurant_app/models/restaurant_model.dart';
-import 'package:restaurant_app/models/star_rating.dart';
 import 'package:restaurant_app/models/get_details_models/top_bar.dart';
 import 'package:restaurant_app/screens/favorites_screen.dart';
-import 'package:restaurant_app/screens/home.dart';
-import 'package:restaurant_app/screens/home_screen.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:share_plus/share_plus.dart';
+
 import 'package:url_launcher/url_launcher_string.dart';
 
 class MyDetails extends StatelessWidget {
@@ -73,7 +68,12 @@ class GetDetails extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () async {
+                                  final link = await DynamicLinkProvider()
+                                      .createLink(state.restaurant!.idDetailed);
+
+                                  Share.share(link);
+                                },
                                 child: Column(
                                   children: [
                                     Icon(
@@ -184,6 +184,7 @@ class GetDetails extends StatelessWidget {
                                 SizedBox(height: 10),
                                 Container(
                                   height: 100,
+                                  width: double.infinity,
                                   child: ListView.builder(
                                     scrollDirection: Axis.horizontal,
                                     itemCount:
@@ -194,10 +195,9 @@ class GetDetails extends StatelessWidget {
                                         margin: EdgeInsets.only(right: 10),
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
-                                            image: NetworkImage(
-                                              state.restaurant!
-                                                  .photosDetailed[index],
-                                            ),
+                                            image: NetworkImage(state
+                                                .restaurant!
+                                                .photosDetailed[index]),
                                             fit: BoxFit.cover,
                                           ),
                                         ),

@@ -8,13 +8,6 @@ import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/screens/home.dart';
 import 'package:restaurant_app/screens/main_screen.dart';
 
-class MyLogin extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return LoginScreen();
-  }
-}
-
 class LoginScreen extends StatelessWidget {
   final TextEditingController _email = TextEditingController();
   final TextEditingController _pass = TextEditingController();
@@ -162,6 +155,7 @@ class LoginScreen extends StatelessWidget {
                   } else if (state.state == LoginScreenState.error) {
                     Text('An error has occurred');
                   } else if (state.state == LoginScreenState.success) {
+                    BlocProvider.of<LoginBloc>(context).add(GetLoginData());
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => MyMain()));
                   }

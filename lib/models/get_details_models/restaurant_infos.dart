@@ -24,15 +24,8 @@ class RestaurantInfoWidget extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              TextButton(
-                onPressed: () {
-                  launchUrlString(restaurant.displayPhoneDetailed);
-                },
-                child: Text(
-                  restaurant.displayPhoneDetailed,
-                  style: TextStyle(fontSize: 15),
-                ),
-              ),
+              Text(restaurant.displayPhoneDetailed,
+                  style: TextStyle(fontSize: 15)),
             ],
           ),
         ),
