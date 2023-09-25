@@ -20,6 +20,8 @@ class CustomNavigationBar extends StatelessWidget {
       builder: (context, state) {
         return BottomNavigationBar(
           currentIndex: state.state.index,
+          selectedItemColor: AppColors.black,
+          unselectedItemColor: AppColors.lightblue,
           onTap: (index) {
             final page = _navigate(index);
 
@@ -28,20 +30,20 @@ class CustomNavigationBar extends StatelessWidget {
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined, color: AppColors.black),
-              label: '',
+              label: 'Home',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.location_on_outlined, color: AppColors.black),
-              label: '',
+              label: 'Map',
             ),
             BottomNavigationBarItem(
               icon:
                   Icon(Icons.favorite_border_outlined, color: AppColors.black),
-              label: '',
+              label: 'Favorites',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_2_outlined, color: AppColors.black),
-              label: '',
+              label: 'Profile',
             ),
           ],
         );

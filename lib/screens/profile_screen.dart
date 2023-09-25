@@ -5,10 +5,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/bloc/dark_theme/bloc/dark_theme_bloc.dart';
 import 'package:restaurant_app/bloc/login/login_bloc.dart';
 import 'package:restaurant_app/bloc/logout/bloc/logout_bloc.dart';
+import 'package:restaurant_app/card.dart';
 
-import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/models/colors.dart';
 import 'package:restaurant_app/screens/login_screen.dart';
+import 'package:restaurant_app/settings.dart';
 
 class ProfileScreen extends StatelessWidget {
   @override
@@ -89,7 +90,13 @@ class ProfileScreen extends StatelessWidget {
                         style: TextStyle(fontSize: 16),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CreditCardInputScreen()),
+                          );
+                        },
                         icon: Icon(Icons.keyboard_arrow_right),
                       ),
                     ],
@@ -131,7 +138,13 @@ class ProfileScreen extends StatelessWidget {
                         style: TextStyle(fontSize: 16),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SettingsScreen()),
+                          );
+                        },
                         icon: Icon(Icons.keyboard_arrow_right),
                       ),
                     ],

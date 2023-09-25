@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:restaurant_app/bloc/dark_theme/bloc/dark_theme_bloc.dart';
 import 'package:restaurant_app/bloc/favorites/bloc/favorites_bloc.dart';
@@ -12,6 +13,7 @@ import 'package:restaurant_app/models/dynamic_link.dart';
 import 'package:restaurant_app/models/internal_database.dart';
 import 'package:restaurant_app/models/restaurant_model.dart';
 import 'package:restaurant_app/screens/splash_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -60,7 +62,14 @@ class MyApp extends StatelessWidget {
       child: BlocBuilder<DarkThemeBloc, DarkThemeState>(
         builder: (context, themeState) {
           return MaterialApp(
-            theme: themeState.isDarkMode ? ThemeData.dark() : ThemeData.light(),
+            theme: themeState.isDarkMode
+                ? ThemeData.dark()
+                : ThemeData.light().copyWith(
+                    textTheme: GoogleFonts.openSansTextTheme(
+                      Theme.of(context).textTheme,
+                    ),
+                  ),
+            showSemanticsDebugger: false,
             home: SplashScreen(),
           );
         },

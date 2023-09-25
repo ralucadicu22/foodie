@@ -31,8 +31,8 @@ class RestaurantMap extends StatelessWidget {
           MarkerLayer(
             markers: [
               Marker(
-                width: 30,
-                height: 30,
+                width: 48,
+                height: 48,
                 point: customLatLng,
                 builder: (context) => GestureDetector(
                   onTap: () {

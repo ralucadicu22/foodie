@@ -77,9 +77,9 @@ class ReviewsSection extends StatelessWidget {
                   child: Text(
                     review.expanded ? review.textReview : shortText,
                     style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500,
-                    ),
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.black),
                   ),
                 ),
                 TextButton(

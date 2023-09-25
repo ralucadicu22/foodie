@@ -45,75 +45,39 @@ class SplashScreen extends StatelessWidget {
               appBar: AppBar(
                 backgroundColor: AppColors.color2,
                 title: Text(
-                  'Discover your food',
+                  'DISCOVER YOUR FOOD',
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 25.0,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.black,
+                    color: AppColors.white,
                   ),
                 ),
-                actions: [
-                  IconButton(
-                    icon: const Icon(Icons.food_bank_outlined),
-                    onPressed: () {},
-                    color: AppColors.black,
-                  )
-                ],
                 centerTitle: true,
               ),
               body: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Image.asset(
-                        AppAssets.ass1,
-                        alignment: Alignment.topCenter,
-                        fit: BoxFit.cover,
-                        opacity: AlwaysStoppedAnimation(.7),
-                      ),
-                      Text(
-                        'The secret of success in life is to eat what you like.',
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          fontStyle: FontStyle.italic,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        textAlign: TextAlign.right,
-                      ),
-                    ],
+                  Center(
+                    child: Icon(
+                      Icons.dining_outlined,
+                      size: 150.0,
+                      color: AppColors.white,
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        width: 150,
-                        height: 115,
-                        alignment: Alignment.bottomRight,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                          color: AppColors.color2,
-                        ),
-                        child: Image.asset(AppAssets.ass2,
-                            width: 150,
-                            height: 115,
-                            fit: BoxFit.cover,
-                            opacity: AlwaysStoppedAnimation(.5)),
-                      ),
-                      ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          primary: AppColors.transparent,
-                        ),
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.start,
-                        ),
-                        label: Text('Get started'),
-                      ),
-                    ],
+                  Center(
+                    child: CircularProgressIndicator(
+                      backgroundColor: AppColors.color1,
+                      valueColor:
+                          AlwaysStoppedAnimation<Color>(AppColors.white),
+                    ),
                   ),
+                  Text(
+                    'Choose the food you LOVE ',
+                    style: TextStyle(
+                        color: AppColors.white,
+                        fontSize: 30.0,
+                        fontStyle: FontStyle.italic),
+                  )
                 ],
               ),
             )));

@@ -11,7 +11,7 @@ class CustomMarker extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
-        border: Border.all(color: AppColors.color1, width: 3.0),
+        border: Border.all(color: AppColors.black, width: 3.0),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(8.0),

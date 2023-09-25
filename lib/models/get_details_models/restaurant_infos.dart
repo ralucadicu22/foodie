@@ -25,7 +25,7 @@ class RestaurantInfoWidget extends StatelessWidget {
                 ),
               ),
               Text(restaurant.displayPhoneDetailed,
-                  style: TextStyle(fontSize: 15)),
+                  style: TextStyle(fontSize: 15, color: AppColors.black)),
             ],
           ),
         ),
