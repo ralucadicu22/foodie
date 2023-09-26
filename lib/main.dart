@@ -63,7 +63,11 @@ class MyApp extends StatelessWidget {
         builder: (context, themeState) {
           return MaterialApp(
             theme: themeState.isDarkMode
-                ? ThemeData.dark()
+                ? ThemeData.dark().copyWith(
+                    textTheme: GoogleFonts.openSansTextTheme(
+                      Theme.of(context).textTheme,
+                    ),
+                  )
                 : ThemeData.light().copyWith(
                     textTheme: GoogleFonts.openSansTextTheme(
                       Theme.of(context).textTheme,

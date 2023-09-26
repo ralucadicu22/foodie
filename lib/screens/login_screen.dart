@@ -1,11 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_app/models/assets.dart';
 import 'package:restaurant_app/bloc/login/login_bloc.dart';
 import 'package:restaurant_app/models/colors.dart';
-import 'package:restaurant_app/screens/home.dart';
 import 'package:restaurant_app/screens/main_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -55,12 +52,41 @@ class LoginScreen extends StatelessWidget {
                   labelText: 'Password',
                   border: OutlineInputBorder(),
                 ),
+                obscureText: true,
               ),
               SizedBox(
                 height: 10,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  BlocProvider.of<LoginBloc>(context).add(
+                    CreateAccountWithEmailAndPassword(
+                      email: _email.text,
+                      password: _pass.text,
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.color1,
+                  minimumSize: Size(500, 40),
+                ),
+                child: Text(
+                  'Create Account',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.black,
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  BlocProvider.of<LoginBloc>(context).add(
+                    SignInWithEmailAndPassword(
+                      email: _email.text,
+                      password: _pass.text,
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.color1,
                   minimumSize: Size(500, 40),

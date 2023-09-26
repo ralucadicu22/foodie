@@ -91,6 +91,7 @@ MERGED from [:firebase_dynamic_links] C:\Users\raldicu\src\restaurant_app\build\
 MERGED from [:firebase_analytics] C:\Users\raldicu\src\restaurant_app\build\firebase_analytics\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:app_settings] C:\Users\raldicu\src\restaurant_app\build\app_settings\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-16:12
 MERGED from [:path_provider_android] C:\Users\raldicu\src\restaurant_app\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -260,6 +261,8 @@ MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_
 MERGED from [:firebase_auth] C:\Users\raldicu\src\restaurant_app\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] C:\Users\raldicu\src\restaurant_app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:app_settings] C:\Users\raldicu\src\restaurant_app\build\app_settings\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:app_settings] C:\Users\raldicu\src\restaurant_app\build\app_settings\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_login_facebook] C:\Users\raldicu\src\restaurant_app\build\flutter_login_facebook\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] C:\Users\raldicu\src\restaurant_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41

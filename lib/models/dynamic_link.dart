@@ -29,6 +29,7 @@ class DynamicLinkProvider {
     final instanceLink = await FirebaseDynamicLinks.instance.getInitialLink();
     if (instanceLink != null) {
       final Uri initLink = instanceLink.link;
+
       Share.share('${initLink.queryParameters["id"]}');
     }
   }

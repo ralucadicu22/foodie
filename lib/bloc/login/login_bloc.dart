@@ -43,6 +43,37 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         emit(state.copyWith(state: LoginScreenState.error));
       }
     });
+    on<CreateAccountWithEmailAndPassword>((event, emit) {
+      _createAccountWithEmailAndPasword(event.email, event.password);
+    });
+
+    on<SignInWithEmailAndPassword>((event, emit) {
+      _signInWithEmailAndPasword(event.email, event.password);
+    });
+  }
+  Future<void> _createAccountWithEmailAndPasword(
+      String email, String password) async {
+    emit(state.copyWith(state: LoginScreenState.loading));
+
+    try {
+      final UserCredential userCredential = await FirebaseAuth.instance
+          .createUserWithEmailAndPassword(email: email, password: password);
+      emit(state.copyWith(state: LoginScreenState.success));
+    } catch (error) {
+      emit(state.copyWith(state: LoginScreenState.error));
+    }
+  }
+
+  Future<void> _signInWithEmailAndPasword(String email, String password) async {
+    emit(state.copyWith(state: LoginScreenState.loading));
+
+    try {
+      final UserCredential userCredential = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: email, password: password);
+      emit(state.copyWith(state: LoginScreenState.success));
+    } catch (error) {
+      emit(state.copyWith(state: LoginScreenState.error));
+    }
   }
 
   GoogleSignIn _googleSignIn = GoogleSignIn(
